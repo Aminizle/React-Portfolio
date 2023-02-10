@@ -100,22 +100,22 @@ function App() {
                 MongoDB/PostgreSQL, offering a wide range of technical knowledge
                 for robust and scalable solutions.
               </p>
-
+<OpenPdfButton />
               <Button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8" 
                     onClick={() => {
                       window.open("../public/web6.png", '_blank');
                         
                     }}>Resume</Button>
             </div>
-                    <OpenPdfButton />
-            <a href="my-project/public/Resume.pdf">
+                    
+            <a href="./assets/Resume.pdf" target="_blank">
               Resume
             </a>
             
           </section>
 
           {/* Services */}
-
+{/* 
           <section id="services">
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <img
@@ -206,11 +206,11 @@ function App() {
                 <p className="text-gray-800 py-1">Figma</p>
               </div>
             </div>
-          </section>
+          </section>*/}
 
           {/* Projects */}
 
-          <section id="Projects">
+          {/* <section id="Projects">
             <div>
               <h3 className="text-3xl py-1 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
                 Portfolio
@@ -290,7 +290,7 @@ function App() {
                 />
               </div>
             </div>
-          </section>
+          </section> */}
         </main>
         <FooterMenu />
       </div>    

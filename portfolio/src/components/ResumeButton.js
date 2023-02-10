@@ -1,20 +1,21 @@
-import React, { useState } from "react";
 import { Button } from "@material-tailwind/react";
+import React, { Component } from 'react';
+import Pdf from '../assets/Resume.pdf';
 
-const OpenPdfButton = () => {
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleClick = () => {
-    setIsLoading(true);
-    window.open("../public/Resume.pdf", "_blank");
-    setIsLoading(false);
-  };
 
-  return (
-    <Button onClick={handleClick} disabled={isLoading}>
-      {isLoading ? "Loading..." : "Open PDF"}
-    </Button>
-  );
-};
+class OpenPdfButton extends Component {
+
+  render() {
+
+    return (
+      
+        <div className = "App">
+          <a href = {Pdf} target = "_blank">Download Pdf</a>
+        </div>
+    );
+
+  }
+}
 
 export default OpenPdfButton;
