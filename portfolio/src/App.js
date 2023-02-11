@@ -16,6 +16,7 @@ import web5 from "./assets/web5.png";
 import web6 from "./assets/web6.png";
 import FooterMenu from "./components/FooterMenu";
 import OpenPdfButton from "./components/ResumeButton";
+import PastProjects from "./components/ProjectsSection";
 import { Button } from "@material-tailwind/react";
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
           {/* landing */}
 
           <section className="min-h-screen" id="landing">
-            <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500">
+            <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500 rounded-xl rounded-t-none">
               <div className="flex dark:text-gray-200 ">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -100,9 +101,9 @@ function App() {
               <OpenPdfButton />
             </div>
           </section>
-
+                    <PastProjects />
           {/* Services */}
-          {/* 
+          
           <section id="services">
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <img
@@ -193,11 +194,11 @@ function App() {
                 <p className="text-gray-800 py-1">Figma</p>
               </div>
             </div>
-          </section>*/}
+          </section>
 
           {/* Projects */}
 
-          {/* <section id="Projects">
+          <section id="Projects">
             <div>
               <h3 className="text-3xl py-1 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
                 Portfolio
@@ -277,7 +278,7 @@ function App() {
                 />
               </div>
             </div>
-          </section> */}
+          </section>
         </main>
         <FooterMenu />
       </div>
