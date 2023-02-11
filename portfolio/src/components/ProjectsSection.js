@@ -3,15 +3,19 @@ import marvel from "../assets/marvel-720p.png";
 import nasa from "../assets/nasa-720p.png";
 import expression from "../assets/expression-720p.png";
 import travel from "../assets/travel-720p.png";
+import {
+    AiFillGithub,    
+  } from "react-icons/ai";
+  import { GiAirplaneDeparture } from "react-icons/gi";
 
 const PastProjects = () => {
   return (
     <div className="flex flex-wrap justify-center text-white ">
-      <div className="w-full lg:w-1/2 bg-slate-400 rounded-lg">
-        <img src={travel} alt="Project 3" className="rounded-lg rounded-b-none" />
+      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg">
+        <a href="https://ameentravel.netlify.app/" target="_blank"><img src={travel} alt="Project 3" className="rounded-lg rounded-b-none" /></a>
         <div className="grid grid-cols-2 m-3">
           <p className="text-left text-sm">
-          A single-page travel website, designed to be fully responsive and optimized for all screen sizes, offering a wealth of features that prioritize user experience. The site features a convenient navigation menu, seamless integration with social media, and a visually stunning video background.
+          A single-page travel site, designed to be fully responsive and optimized for all screen sizes, offering a wealth of features that prioritize user experience. The site features a convenient navigation menu, seamless integration with social media, and a visually stunning video background.
           </p>
           <div>
             <p className="text-center text-sm">Tech Stack:</p>
@@ -19,10 +23,15 @@ const PastProjects = () => {
               <li>HTML 5</li>
               <li>CSS 3</li>
             </ul>
+            <div>
+            <a href="https://github.com/Aminizle"><GiAirplaneDeparture className="mx-5 hover:scale-125" />see project live</a>
+            
+            <a href="https://github.com/Aminizle">see project on Github<AiFillGithub className="mx-5 hover:scale-125" /></a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-slate-400 rounded-lg ">
+      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
         <img src={marvel} alt="Project 1" className="rounded-lg" />
         <div className="grid grid-cols-2 m-3">
           <p className=" text-left text-sm">
@@ -37,7 +46,7 @@ const PastProjects = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-slate-400 rounded-lg ">
+      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
         <img src={nasa} alt="Project 3" className="rounded-lg rounded-b-none" />
         <div className="grid grid-cols-2 m-3 ">
           <p className="text-left text-sm">
@@ -53,7 +62,7 @@ const PastProjects = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-slate-400 rounded-lg ">
+      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
         <img src={expression} alt="Project 3" className="rounded-lg rounded-b-none" />
         <div className="grid grid-cols-2 m-3 ">
           <p className="text-left text-sm">
@@ -63,7 +72,9 @@ const PastProjects = () => {
             <p className="text-center text-sm">Tech Stack:</p>
             <ul>
               <li>HTML 5</li>
+              <li>Sass</li>
               <li>CSS 3</li>
+              <li>JavaScript</li>
             </ul>
           </div>
         </div>
