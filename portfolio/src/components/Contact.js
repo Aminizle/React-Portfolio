@@ -71,14 +71,14 @@ function ContactForm() {
               </Button>
             </div>
           </form>
-          <div className="basis-1/3 flex-1 rounded-lg">
+          <div className="basis-1/3 flex-1 rounded-lg mx-auto max-w-lg">
           <div className="my-20">
             <p className="">
-            Ready to jumpstart the journey? <br></br>Simply send me a message and let's get the ball rolling! I can't wait to see what we can accomplish together.
+            Whether you need a one-person powerhouse or a Scrum team player in an Agile environment who can seamlessly integrate with your existing workflow, I've got you covered. Don't hesitate, send me a message today!
             </p>
           </div>
-            <div className="flex mt-5 bg-slate-300 rounded-lg w-164  ">
-              <p className=" text-md py-2 px-4 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
+            <div className="flex mt-5 bg-slate-300 rounded-lg w-164">
+              <p className=" text-md py-2 px-4 leading-8 text-gray-800 md:text-xl max-w-lg  dark:text-gray-500">
                 You can also email me at{" "}
                 <a
                   href="mailto:AmeenMohiyuddin2022@gmail.com"
