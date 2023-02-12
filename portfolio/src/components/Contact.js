@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@material-tailwind/react";
 import { IoMdCopy } from "react-icons/io";
 
+
 function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -17,7 +18,7 @@ function ContactForm() {
   };
 
   return (
-    <div>
+    <section id="contact">
       <div>
         <h3 className="text-3xl mb-5 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
           Let's Connect
@@ -73,10 +74,10 @@ function ContactForm() {
           </form>
           <div className="basis-1/3 flex-1 rounded-lg mx-auto max-w-lg">
           <div className="my-20">
-            <p className="">
-            Whether you need a one-person powerhouse or a Scrum team player in an Agile environment who can seamlessly integrate with your existing workflow, I've got you covered. Don't hesitate, send me a message today!
+            <p className="dark:text-gray-500">
+            Whether you need a <span className="text-cyan-500">one-person powerhouse </span>or a <span className="text-cyan-500">Scrum team player in an Agile environment </span> who can seamlessly integrate with your existing workflow, I've got you covered. Don't hesitate, <span className="text-cyan-500">send me a message today! </span>
             </p>
-          </div>
+          </div>          
             <div className="flex mt-5 bg-slate-300 rounded-lg w-164">
               <p className=" text-md py-2 px-4 leading-8 text-gray-800 md:text-xl max-w-lg  dark:text-gray-500">
                 You can also email me at{" "}
@@ -97,7 +98,7 @@ function ContactForm() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

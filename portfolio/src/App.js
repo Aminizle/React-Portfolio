@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet";
 import "./App.css";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillArrowDownCircleFill } from "react-icons/bs";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 import marvel from "./assets/marvel-720p.png";
@@ -39,7 +39,7 @@ function App() {
           {/* landing */}
 
           <section className="min-h-screen" id="landing">
-            <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500 rounded-xl rounded-t-none">
+            <nav className="py-5 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
               <div className="flex dark:text-gray-200 ">
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
@@ -87,7 +87,7 @@ function App() {
               <h2 className="text-5xl py-2 dark:text-gray-200 font-medium md:text-6xl underline">
                 Ameen Mohiyuddin
               </h2>
-              <h3 className="text-2xl py-2 md:text-3xl text-teal-600">
+              <h3 className="text-2xl py-2 md:text-3xl text-cyan-600">
                 Full Stack Web Developer
               </h3>
               <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500 transition-opacity ease-in duration-700 opacity-100">
@@ -97,7 +97,7 @@ function App() {
                 applications. My eagerness to learn and proven track record
                 demonstrates my commitment to delivering high-quality results
                 and exceeding expectations.
-                <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
+                <VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />
                 Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
                 CSS/Bootstrap, Next.js/React.js, Node.js, and
                 MongoDB/PostgreSQL, offering a wide range of technical knowledge
@@ -105,11 +105,12 @@ function App() {
               </p>
               <OpenPdfButton />
             </div>
+            <a href="#Projects">
+              <BsFillArrowDownCircleFill className="mx-auto text-4xl text-cyan-500 hover:text-teal-500 animate-bounce" />
+            </a>
           </section>
           <PastProjects />
-          {/* Services */}
-<Contact />
-          
+          <Contact />
         </main>
         <FooterMenu />
       </div>
