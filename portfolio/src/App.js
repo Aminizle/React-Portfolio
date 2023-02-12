@@ -21,6 +21,7 @@ import web6 from "./assets/web6.png";
 import FooterMenu from "./components/FooterMenu";
 import OpenPdfButton from "./components/ResumeButton";
 import PastProjects from "./components/ProjectsSection";
+import Contact from "./components/Contact";
 import { Button } from "@material-tailwind/react";
 
 function App() {
@@ -107,7 +108,7 @@ function App() {
           </section>
           <PastProjects />
           {/* Services */}
-
+<Contact />
           
         </main>
         <FooterMenu />

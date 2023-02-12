@@ -33,28 +33,28 @@ function FooterMenu() {
         <ul className="flex justify-center mt-5 text-teal-600 cursor-pointer text-3xl ">
           <li>
             <a href="https://twitter.com/DevAmeenM">
-              <AiFillTwitterCircle className="mx-5 hover:scale-125" />
+              <AiFillTwitterCircle className="mx-5 hover:scale-125 hover:text-teal-500" />
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/ameen-mohiyuddin/">
-              <AiFillLinkedin className="mx-5 hover:scale-125" />
+              <AiFillLinkedin className="mx-5 hover:scale-125 hover:text-teal-500" />
             </a>
           </li>
 
           <li>
             <a href="https://github.com/Aminizle">
-              <AiFillGithub className="mx-5 hover:scale-125" />
+              <AiFillGithub className="mx-5 hover:scale-125 hover:text-teal-500" />
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
-              <AiFillYoutube className="mx-5 hover:scale-125" />
+              <AiFillYoutube className="mx-5 hover:scale-125 hover:text-teal-500" />
             </a>
           </li>
           <li>
-            <a className="font-medium hover:text-white text-xl " href="#">
-            <MdEmail className="mx-5 hover:scale-125 text-3xl" />             
+            <a className="font-medium text-xl " href="#">
+            <MdEmail className="mx-5 hover:scale-125 text-3xl hover:text-teal-500" />             
             </a>
           </li>
         </ul>
