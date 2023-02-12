@@ -10,7 +10,7 @@ import { Button } from "@material-tailwind/react";
 const PastProjects = () => {
   return (
     <div className="flex flex-wrap justify-center text-white ">
-      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg">
+      <div className="w-full lg:w-1/2 rounded-lg">
         <a href="https://ameentravel.netlify.app/" target="_blank">
           <img
             src={travel}
@@ -32,17 +32,17 @@ const PastProjects = () => {
               <li>HTML 5</li>
               <li>CSS 3</li>
             </ul>
-            <div className="inline-flex items-center">
-              <Button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide mt-10 dark:text-white px-4 py-2 rounded-md ml-8 shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
-                <a href="https://ameentravel.netlify.app/" className="inline-flex items-center">
+            <div className="inline-flex items-center my-2">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
+                <a href="https://ameentravel.netlify.app/" className="inline-flex items-center" target="_blank">
                   
-                  see project live<GiAirplaneDeparture className="mx-5 hover:scale-125" />
+                  View Live<GiAirplaneDeparture className="ml-2 hover:scale-110" />
                 </a>
               </Button>
-              <Button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide mt-10 dark:text-white px-4 py-2 rounded-md ml-8 shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
-                <a href="https://github.com/Aminizle/travel-site" className="inline-flex items-center">
-                  see project on Github
-                  <AiFillGithub className="mx-5 hover:scale-125" />
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
+                <a href="https://github.com/Aminizle/travel-site" className="inline-flex items-center" target="_blank">
+                  View on Github
+                  <AiFillGithub className="ml-2 hover:scale-110" />
                 </a>
               </Button>
             </div>
