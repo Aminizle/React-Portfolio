@@ -43,7 +43,8 @@ const PastProjects = () => {
             <img src={travel} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid grid-cols-2 m-3">
-            <p className="text-left text-sm">
+        
+            <p className="text-left text-sm">  <span className="text-center text-lg font-bold">Travel More, Worry Less</span><br></br>
               A single-page travel site, designed to be fully responsive and
               optimized for all screen sizes, offering a wealth of features that
               prioritize user experience. The site features a convenient
@@ -90,7 +91,7 @@ const PastProjects = () => {
             <img src={marvel} alt="Project 1" className="rounded-lg" />
           </a>
           <div className="grid grid-cols-2 m-3">
-            <p className=" text-left text-sm">
+            <p className=" text-left text-sm"><span className="text-center text-lg font-bold">Marvel Cinematic Universe Explorer</span><br></br>
               Embark on an epic journey through the Marvel Cinematic Universe on
               this site! Get the inside scoop straight from Marvel, with the
               latest information powered by their very own API. Experience the
@@ -138,7 +139,7 @@ const PastProjects = () => {
             <img src={nasa} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid grid-cols-2 m-3 ">
-            <p className="text-left text-sm">
+            <p className="text-left text-sm"><span className="text-center text-lg font-bold">NASA Picture of the Day Explorer</span><br></br>
               Delve into an intergalactic journey of discovery with our NASA
               Picture of the Day Explorer! Experience breathtaking images from
               the vastness of space with a mesmerizing video background. Choose
@@ -187,7 +188,7 @@ const PastProjects = () => {
             <img src={expression} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid grid-cols-2 m-3 ">
-            <p className="text-left text-sm">
+            <p className="text-left text-sm"><span className="text-center text-lg font-bold">Last Expression: Photography gallery</span><br></br>
               Unleash your creativity and let the world bask in the brilliance
               of your photography with our fully responsive website,
               custom-tailored to showcase your greatest shots! With a sleek and
