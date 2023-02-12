@@ -64,7 +64,7 @@ const PastProjects = () => {
                     className="inline-flex items-center"
                     target="_blank"
                   >
-                    View Live
+                    View Live Site
                     <GiAirplaneDeparture className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
@@ -115,7 +115,7 @@ const PastProjects = () => {
                     className="inline-flex items-center"
                     target="_blank"
                   >
-                    View Live
+                    View Live Site
                     <BiCameraMovie className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
@@ -164,7 +164,7 @@ const PastProjects = () => {
                     className="inline-flex items-center"
                     target="_blank"
                   >
-                    View Live
+                    View Live Site
                     <GoTelescope className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
@@ -213,7 +213,7 @@ const PastProjects = () => {
                     className="inline-flex items-center"
                     target="_blank"
                   >
-                    View Live
+                    View Live Site
                     <AiFillCamera className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
