@@ -3,8 +3,10 @@ import marvel from "../assets/marvel-720p.png";
 import nasa from "../assets/nasa-720p.png";
 import expression from "../assets/expression-720p.png";
 import travel from "../assets/travel-720p.png";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillCamera } from "react-icons/ai";
 import { GiAirplaneDeparture } from "react-icons/gi";
+import { BiCameraMovie } from "react-icons/bi";
+import { GoTelescope } from "react-icons/go";
 import { Button } from "@material-tailwind/react";
 
 const PastProjects = () => {
@@ -34,16 +36,16 @@ const PastProjects = () => {
               <li>JavaScript</li>
             </ul>
             <div className="inline-flex items-center my-2">
-              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 ">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                 <a href="https://ameentravel.netlify.app/" className="inline-flex items-center" target="_blank">
                   
-                  View Live<GiAirplaneDeparture className="ml-2 hover:scale-110" />
+                  View Live<GiAirplaneDeparture className="ml-2 hover:scale-125" />
                 </a>
               </Button>
-              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 ">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                 <a href="https://github.com/Aminizle/travel-site" className="inline-flex items-center" target="_blank">
                   View on Github
-                  <AiFillGithub className="ml-2 hover:scale-110" />
+                  <AiFillGithub className="ml-2 hover:scale-125" />
                 </a>
               </Button>
             </div>
@@ -51,7 +53,8 @@ const PastProjects = () => {
         </div>
       </div>
       <div className="w-full lg:w-1/2 rounded-lg ">
-        <img src={marvel} alt="Project 1" className="rounded-lg" />
+      <a href="https://marvel-cinematic-universe.netlify.app/" target="_blank">
+        <img src={marvel} alt="Project 1" className="rounded-lg" /></a>
         <div className="grid grid-cols-2 m-3">
           <p className=" text-left text-sm">
             Embark on an epic journey through the Marvel Cinematic Universe on
@@ -70,11 +73,26 @@ const PastProjects = () => {
               <li>Bootstrap</li>
               <li>JavaScript</li>
             </ul>
+            <div className="inline-flex items-center my-2">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://marvel-cinematic-universe.netlify.app/" className="inline-flex items-center" target="_blank">
+                  
+                  View Live<BiCameraMovie className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://github.com/Aminizle/Marvel" className="inline-flex items-center" target="_blank">
+                  View on Github
+                  <AiFillGithub className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
       <div className="w-full lg:w-1/2 rounded-lg ">
-        <img src={nasa} alt="Project 3" className="rounded-lg rounded-b-none" />
+      <a href="https://nasa-picture-archive.netlify.app/" target="_blank">
+        <img src={nasa} alt="Project 3" className="rounded-lg rounded-b-none" /></a>
         <div className="grid grid-cols-2 m-3 ">
           <p className="text-left text-sm">
             Delve into an intergalactic journey of discovery with our NASA
@@ -95,15 +113,30 @@ const PastProjects = () => {
               <li>CSS 3</li>
               <li>JavaScript</li>
             </ul>
+            <div className="inline-flex items-center my-2">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://nasa-picture-archive.netlify.app/" className="inline-flex items-center" target="_blank">
+                  
+                  View Live<GoTelescope className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://github.com/Aminizle/NASA" className="inline-flex items-center" target="_blank">
+                  View on Github
+                  <AiFillGithub className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
       <div className="w-full lg:w-1/2 rounded-lg ">
+      <a href="https://last-expression.netlify.app/" target="_blank">
         <img
           src={expression}
           alt="Project 3"
           className="rounded-lg rounded-b-none"
-        />
+        /></a>
         <div className="grid grid-cols-2 m-3 ">
           <p className="text-left text-sm">
             Unleash your creativity and let the world bask in the brilliance of
@@ -124,6 +157,20 @@ const PastProjects = () => {
               <li>CSS 3</li>
               <li>JavaScript</li>
             </ul>
+            <div className="inline-flex items-center my-2">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://last-expression.netlify.app/" className="inline-flex items-center" target="_blank">
+                  
+                  View Live<AiFillCamera className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <a href="https://github.com/Aminizle/Bilal-Photography" className="inline-flex items-center" target="_blank">
+                  View on Github
+                  <AiFillGithub className="ml-2 hover:scale-125" />
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
