@@ -31,6 +31,7 @@ const PastProjects = () => {
             <ul>
               <li>HTML 5</li>
               <li>CSS 3</li>
+              <li>JavaScript</li>
             </ul>
             <div className="inline-flex items-center my-2">
               <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 ">
@@ -49,7 +50,7 @@ const PastProjects = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
+      <div className="w-full lg:w-1/2 rounded-lg ">
         <img src={marvel} alt="Project 1" className="rounded-lg" />
         <div className="grid grid-cols-2 m-3">
           <p className=" text-left text-sm">
@@ -66,12 +67,13 @@ const PastProjects = () => {
             <ul>
               <li>HTML 5</li>
               <li>CSS 3</li>
+              <li>Bootstrap</li>
               <li>JavaScript</li>
             </ul>
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
+      <div className="w-full lg:w-1/2 rounded-lg ">
         <img src={nasa} alt="Project 3" className="rounded-lg rounded-b-none" />
         <div className="grid grid-cols-2 m-3 ">
           <p className="text-left text-sm">
@@ -96,7 +98,7 @@ const PastProjects = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 bg-gradient-to-l from-cyan-500 to-teal-500 rounded-lg ">
+      <div className="w-full lg:w-1/2 rounded-lg ">
         <img
           src={expression}
           alt="Project 3"
