@@ -33,13 +33,13 @@ const PastProjects = () => {
               <li>CSS 3</li>
             </ul>
             <div className="inline-flex items-center my-2">
-              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 ">
                 <a href="https://ameentravel.netlify.app/" className="inline-flex items-center" target="_blank">
                   
                   View Live<GiAirplaneDeparture className="ml-2 hover:scale-110" />
                 </a>
               </Button>
-              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 border-purple-800">
+              <Button className="mx-1 bg-gradient-to-r from-cyan-500 to-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-125 ">
                 <a href="https://github.com/Aminizle/travel-site" className="inline-flex items-center" target="_blank">
                   View on Github
                   <AiFillGithub className="ml-2 hover:scale-110" />
