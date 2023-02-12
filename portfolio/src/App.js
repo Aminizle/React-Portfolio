@@ -4,6 +4,10 @@ import "./App.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 
+import marvel from "./assets/marvel-720p.png";
+import nasa from "./assets/nasa-720p.png";
+import expression from "./assets/expression-720p.png";
+import travel from "./assets/travel-720p.png";
 import deved from "./assets/logo.png";
 import design from "./assets/design.png";
 import code from "./assets/code.png";
@@ -133,7 +137,7 @@ function App() {
             <div className="lg:flex gap-10">
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200">
                 <img
-                  src={design}
+                  src={nasa}
                   width={100}
                   height={100}
                   alt="3D design logo"
@@ -198,34 +202,22 @@ function App() {
 
           {/* Projects */}
 
-          <section id="Projects">
-            <div>
-              <h3 className="text-3xl py-1 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
-                Portfolio
-              </h3>
-              <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-                Since the beginning of my journey as a freelance developer, I've
-                done remote work for
-                <span className="text-teal-500"> agencies </span> consulted
-                <span className="text-teal-500"> startups </span> and
-                collaborated with talented people to create digital products for
-                both business and consumer use.
-              </p>
-              <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-                I offer from a wide range of services, including brand design,
-                programming and teaching
-              </p>
-            </div>
+          
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <div className="basis-1/3 flex-1">
                 <img
-                  src={web1}
+                  src={nasa}
                   alt=""
                   className="rounded-lg object-cover"
                   width={"100%"}
                   height={"100%"}
                   style={{ objectFit: "cover" }}
                 />
+                <div className="bg-slate-400">
+                  <p>
+                  Embark on an intergalactic journey of discovery with our single-page NASA Picture of the Day Explorer! Experience breathtaking images from the vastness of space with a mesmerizing video background. Choose any date you like and bask in the beauty of the cosmos, with a simple yet powerful interface that brings the universe to your fingertips. Get up close and personal with each picture, accompanied by a descriptive title and insightful explanation. And don't forget to share your interstellar adventures with your friends and followers through our integrated social media links. Get ready for a truly out-of-this-world experience!
+                  </p>
+                </div>
               </div>
               <div className="basis-1/3 flex-1">
                 <img
@@ -236,6 +228,11 @@ function App() {
                   height={"100%"}
                   style={{ objectFit: "cover" }}
                 />
+                <div className="bg-slate-400">
+                  <p>
+                  Embark on an intergalactic journey of discovery with our single-page NASA Picture of the Day Explorer! Experience breathtaking images from the vastness of space with a mesmerizing video background. Choose any date you like and bask in the beauty of the cosmos, with a simple yet powerful interface that brings the universe to your fingertips. Get up close and personal with each picture, accompanied by a descriptive title and insightful explanation. And don't forget to share your interstellar adventures with your friends and followers through our integrated social media links. Get ready for a truly out-of-this-world experience!
+                  </p>
+                </div>
               </div>
               <div className="basis-1/3 flex-1">
                 <img
@@ -245,7 +242,12 @@ function App() {
                   width={"100%"}
                   height={"100%"}
                   style={{ objectFit: "cover" }}
-                />
+                /><div className="bg-slate-400">
+                  <p>
+                  Embark on an intergalactic journey of discovery with our single-page NASA Picture of the Day Explorer! Experience breathtaking images from the vastness of space with a mesmerizing video background. Choose any date you like and bask in the beauty of the cosmos, with a simple yet powerful interface that brings the universe to your fingertips. Get up close and personal with each picture, accompanied by a descriptive title and insightful explanation. And don't forget to share your interstellar adventures with your friends and followers through our integrated social media links. Get ready for a truly out-of-this-world experience!
+                  </p>
+                </div>
+
               </div>
               <div className="basis-1/3 flex-1">
                 <img
@@ -256,6 +258,11 @@ function App() {
                   height={"100%"}
                   style={{ objectFit: "cover" }}
                 />
+                <div className="bg-slate-400">
+                  <p>
+                  Embark on an intergalactic journey of discovery with our single-page NASA Picture of the Day Explorer! Experience breathtaking images from the vastness of space with a mesmerizing video background. Choose any date you like and bask in the beauty of the cosmos, with a simple yet powerful interface that brings the universe to your fingertips. Get up close and personal with each picture, accompanied by a descriptive title and insightful explanation. And don't forget to share your interstellar adventures with your friends and followers through our integrated social media links. Get ready for a truly out-of-this-world experience!
+                  </p>
+                </div>
               </div>
               <div className="basis-1/3 flex-1">
                 <img
@@ -265,7 +272,12 @@ function App() {
                   width={"100%"}
                   height={"100%"}
                   style={{ objectFit: "cover" }}
-                />
+                /><div className="bg-slate-400">
+                  <p>
+                  Embark on an intergalactic journey of discovery with our single-page NASA Picture of the Day Explorer! Experience breathtaking images from the vastness of space with a mesmerizing video background. Choose any date you like and bask in the beauty of the cosmos, with a simple yet powerful interface that brings the universe to your fingertips. Get up close and personal with each picture, accompanied by a descriptive title and insightful explanation. And don't forget to share your interstellar adventures with your friends and followers through our integrated social media links. Get ready for a truly out-of-this-world experience!
+                  </p>
+                </div>
+
               </div>
               <div className="basis-1/3 flex-1">
                 <img
@@ -278,7 +290,7 @@ function App() {
                 />
               </div>
             </div>
-          </section>
+         
         </main>
         <FooterMenu />
       </div>
