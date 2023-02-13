@@ -39,7 +39,7 @@ const PastProjects = () => {
 
       <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white ">
         <div className="basis-1/3 flex-1 rounded-lg">
-          <a href="https://ameentravel.netlify.app/" target="_blank">
+          <a href="https://ameentravel.netlify.app/" target="_blank" rel="noreferrer">
             <img src={travel} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid md:grid-cols-2 m-3">
@@ -64,6 +64,7 @@ const PastProjects = () => {
                     href="https://ameentravel.netlify.app/"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View Live Site
                     <GiAirplaneDeparture className="ml-2 hover:scale-125" />
@@ -74,6 +75,7 @@ const PastProjects = () => {
                     href="https://github.com/Aminizle/travel-site"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View on Github
                     <AiFillGithub className="ml-2 hover:scale-125" />
@@ -87,6 +89,7 @@ const PastProjects = () => {
           <a
             href="https://marvel-cinematic-universe.netlify.app/"
             target="_blank"
+            rel="noreferrer"
           >
             <img src={marvel} alt="Project 1" className="rounded-lg" />
           </a>
@@ -115,6 +118,7 @@ const PastProjects = () => {
                     href="https://marvel-cinematic-universe.netlify.app/"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View Live Site
                     <BiCameraMovie className="ml-2 hover:scale-125" />
@@ -125,6 +129,7 @@ const PastProjects = () => {
                     href="https://github.com/Aminizle/Marvel"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View on Github
                     <AiFillGithub className="ml-2 hover:scale-125" />
@@ -135,7 +140,7 @@ const PastProjects = () => {
           </div>
         </div>
         <div className="basis-1/3 flex-1 rounded-lg ">
-          <a href="https://nasa-picture-archive.netlify.app/" target="_blank">
+          <a href="https://nasa-picture-archive.netlify.app/" target="_blank" rel="noreferrer">
             <img src={nasa} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid md:grid-cols-2 m-3 ">
@@ -164,6 +169,7 @@ const PastProjects = () => {
                     href="https://nasa-picture-archive.netlify.app/"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View Live Site
                     <GoTelescope className="ml-2 hover:scale-125" />
@@ -174,6 +180,7 @@ const PastProjects = () => {
                     href="https://github.com/Aminizle/NASA"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View on Github
                     <AiFillGithub className="ml-2 hover:scale-125" />
@@ -184,7 +191,7 @@ const PastProjects = () => {
           </div>
         </div>
         <div className="basis-1/3 flex-1 rounded-lg ">
-          <a href="https://last-expression.netlify.app/" target="_blank">
+          <a href="https://last-expression.netlify.app/" target="_blank" rel="noreferrer">
             <img src={expression} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid md:grid-cols-2 m-3 ">
@@ -213,6 +220,7 @@ const PastProjects = () => {
                     href="https://last-expression.netlify.app/"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View Live Site
                     <AiFillCamera className="ml-2 hover:scale-125" />
@@ -223,6 +231,7 @@ const PastProjects = () => {
                     href="https://github.com/Aminizle/Bilal-Photography"
                     className="inline-flex items-center"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     View on Github
                     <AiFillGithub className="ml-2 hover:scale-125" />
