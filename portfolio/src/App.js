@@ -4,25 +4,11 @@ import "./App.css";
 import { BsFillMoonStarsFill, BsFillArrowDownCircleFill } from "react-icons/bs";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 
-import marvel from "./assets/marvel-720p.png";
-import nasa from "./assets/nasa-720p.png";
-import expression from "./assets/expression-720p.png";
-import travel from "./assets/travel-720p.png";
-import deved from "./assets/logo.png";
-import design from "./assets/design.png";
-import code from "./assets/code.png";
-import consulting from "./assets/consulting.png";
-import web1 from "./assets/web1.png";
-import web2 from "./assets/web2.png";
-import web3 from "./assets/web3.png";
-import web4 from "./assets/web4.png";
-import web5 from "./assets/web5.png";
-import web6 from "./assets/web6.png";
 import FooterMenu from "./components/FooterMenu";
 import OpenPdfButton from "./components/ResumeButton";
 import PastProjects from "./components/ProjectsSection";
 import Contact from "./components/Contact";
-import { Button } from "@material-tailwind/react";
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -57,7 +43,7 @@ function App() {
                 <li>Twitter</li>
                 <li>CodeWars</li>
                 <li>
-                  <a
+                  <span
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8 hover:scale-125"
                     href="#"
                     onClick={() =>
@@ -66,7 +52,7 @@ function App() {
                     }
                   >
                     Contact me
-                  </a>
+                  </span>
                 </li>
               </ul>
 
@@ -99,7 +85,7 @@ function App() {
                 and exceeding expectations.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />
                 Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
-                CSS/Bootstrap, Next.js/React.js, Node.js, and
+                CSS/Bootstrap, Next.js/React.js, Node.js, Express/Axios and
                 MongoDB/PostgreSQL, offering a wide range of technical knowledge
                 for robust and scalable solutions.
               </p>
