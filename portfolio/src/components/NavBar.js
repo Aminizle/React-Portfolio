@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import Pdf from "../assets/Resume.pdf";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  
+
   return (
     <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50 hover:bg-teal-500 py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex dark:text-gray-200">
-        <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
-                />
+          <BsFillMoonStarsFill
+            onClick={() => setDarkMode(!darkMode)}
+            className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
+          />
           <a className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-gray-800">
             {"<Dev Ameen />"}
           </a>
@@ -46,78 +47,101 @@ const NavBar = () => {
             isOpen ? "block" : "hidden"
           } lg:block mt-2 lg:mt-0 teal-500 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center">
+          <ul className="list-reset lg:flex justify-end flex-1 items-center ">
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="#landing"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 About Me
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="#Projects"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Projects
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="#contact"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Contact Me
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href={Pdf}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Resume
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
-              >
-                Github
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="https://www.linkedin.com/in/ameen-mohiyuddin/"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 LinkedIn
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="https://github.com/Aminizle"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                Github
+              </a>
+            </li>
+            
+            <li className="mr-3">
+              <a
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="https://twitter.com/DevAmeenM"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 Twitter
               </a>
             </li>
+           
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                Youtube
+              </a>
+              <li className="mr-3">
+              <a
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.codewars.com/users/DevAmeenM"
+                onClick={() => setIsOpen(!isOpen)}
               >
                 CodeWars
               </a>
             </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-gray-600 py-2 px-4 hover:text-gray-900 font-medium"
-                href="#"
-              >
-                Youtube
-              </a>
             </li>
           </ul>
         </div>
