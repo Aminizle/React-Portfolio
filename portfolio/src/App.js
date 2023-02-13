@@ -9,7 +9,6 @@ import OpenPdfButton from "./components/ResumeButton";
 import PastProjects from "./components/ProjectsSection";
 import Contact from "./components/Contact";
 
-
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
@@ -22,8 +21,6 @@ function App() {
 
       <div className={darkMode ? "dark" : ""}>
         <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-          {/* landing */}
-
           <section className="min-h-screen" id="landing">
             <nav className="py-5 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
               <div className="flex dark:text-gray-200 ">
