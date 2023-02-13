@@ -47,10 +47,10 @@ const NavBar = () => {
             isOpen ? "block" : "hidden"
           } lg:block mt-2 lg:mt-0 teal-500 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
         >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center ">
+          <ul className="list-reset lg:flex justify-end flex-1 items-center text-lg">
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="#landing"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -59,7 +59,7 @@ const NavBar = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="#Projects"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -68,7 +68,7 @@ const NavBar = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="#contact"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -77,7 +77,7 @@ const NavBar = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href={Pdf}
                 target="_blank"
                 rel="noreferrer"
@@ -88,7 +88,7 @@ const NavBar = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="https://www.linkedin.com/in/ameen-mohiyuddin/"
                 target="_blank"
                 rel="noreferrer"
@@ -99,7 +99,7 @@ const NavBar = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="https://github.com/Aminizle"
                 target="_blank"
                 rel="noreferrer"
@@ -108,10 +108,10 @@ const NavBar = () => {
                 Github
               </a>
             </li>
-            
+
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="https://twitter.com/DevAmeenM"
                 target="_blank"
                 rel="noreferrer"
@@ -120,10 +120,10 @@ const NavBar = () => {
                 Twitter
               </a>
             </li>
-           
+
             <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw"
                 target="_blank"
                 rel="noreferrer"
@@ -131,9 +131,10 @@ const NavBar = () => {
               >
                 Youtube
               </a>
-              <li className="mr-3">
+            </li>
+            <li className="mr-3">
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium hover:font-bold"
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.codewars.com/users/DevAmeenM"
@@ -141,7 +142,6 @@ const NavBar = () => {
               >
                 CodeWars
               </a>
-            </li>
             </li>
           </ul>
         </div>
