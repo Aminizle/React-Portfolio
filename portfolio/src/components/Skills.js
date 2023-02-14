@@ -21,7 +21,7 @@ const Skills = () => {
       <div className="flex justify-center justify-items-center">
         <div className=" m-3 text-left ">
           <h3 className="text-xl font-bold">Front End</h3>
-          <ul className="list-disc pl-5  ">
+          <ul className="pl-5  ">
             <li className="flex">
               <SiJavascript />
               JavaScript
@@ -60,7 +60,7 @@ const Skills = () => {
       <div className="flex justify-center justify-items-center">
         <div className=" m-3 text-left">
           <h3 className="text-xl font-bold">Back End</h3>
-          <ul className="list-disc pl-5">
+          <ul className="pl-5">
             <li className="flex">
               <SiNodedotjs />
               Node.js
@@ -87,27 +87,20 @@ const Skills = () => {
       <div className="flex justify-center justify-items-center">
         <div className=" m-3 text-left">
           <h3 className="text-xl font-bold">Development Tools</h3>
-          <ul className="list-disc pl-5">
-          
-            <li>Version control: Git</li>
-            <li>Project management: Trello, JIRA & Azure DevOps</li>
-            <li>Collaboration tools: Slack, Microsoft Teams, Confluence</li>
-            <li>
-              integrated development environment (IDE): Visual Studio Code &
-              intellij
-            </li>
-            <li>
-              Continuous integration and deployment (CI/CD): Jenkins & Azure
-              DevOps
-            </li>
-            <li>API testing: Postman</li>
+          <ul className="pl-5">
+            <li>Git</li>
+            <li>Trello, JIRA & Azure DevOps</li>
+            <li>Slack, Microsoft Teams, Confluence</li>
+            <li>Visual Studio Code & intellij</li>
+            <li>Jenkins & Azure DevOps</li>
+            <li>Postman</li>
           </ul>
         </div>
       </div>
       <div className="flex justify-center justify-items-center">
         <div className=" m-3 text-left">
           <h3 className="text-xl font-bold">Professional Skills</h3>
-          <ul className="list-disc pl-5">
+          <ul className="pl-5">
             <li>Agile Scrum</li>
             <li>kanaban</li>
             <li>Team management</li>
