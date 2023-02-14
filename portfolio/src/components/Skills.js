@@ -81,55 +81,40 @@ const Skills = () => {
         </ul>
       </div>
       <div className=" m-3 text-left">
-        <h3 className="text-xl font-bold">Miscellaneous Tools</h3>
+        <h3 className="text-xl font-bold">Development Tools</h3>
         <ul className="list-disc pl-5">
-          <li className="flex">
-            <SiMongodb />
+          <li>
             Version control: Git
           </li>
-          <li className="flex">
-            <SiMongodb />
-            Project management: Trello, JIRA &  Azure DevOps
+          <li>
+            Project management: Trello, JIRA & Azure DevOps
           </li>
-          <li className="flex">
-            <SiMongodb />
+          <li>
             Collaboration tools: Slack, Microsoft Teams, Confluence
           </li>
-          <li className="flex">
-            <SiMongodb />
-            integrated development environment (IDE): Visual Studio Code & intellij
-          </li>          
-          <li className="flex">
-            <SiMongodb />
-            Continuous integration and deployment (CI/CD): Jenkins & Azure DevOps
+          <li>
+            integrated development environment (IDE): Visual Studio Code &
+            intellij
           </li>
-          <li className="flex">
-            <SiMongodb />
+          <li>
+            Continuous integration and deployment (CI/CD): Jenkins & Azure
+            DevOps
+          </li>
+          <li>
             API testing: Postman
           </li>
         </ul>
       </div>
       <div className=" m-3 text-left">
-        <h3 className="text-xl font-bold">Softkills</h3>
+        <h3 className="text-xl font-bold">Professional Skills</h3>
         <ul className="list-disc pl-5">
-          <li>
-           Agile Scrum
-          </li>
-          <li>
-           kanaban
-          </li>
-          <li>
-           Agile Scrum
-          </li>
-          <li>
-           Agile Scrum
-          </li>
-          <li>
-           Agile Scrum
-          </li>
-          <li>
-           Agile Scrum
-          </li>
+          <li>Agile Scrum</li>
+          <li>kanaban</li>
+          <li>Team management</li>
+          <li>Effective communication</li>
+          <li>Adaptability</li>
+          <li>Problem-solving</li>
+          <li>Collaboration</li>
         </ul>
       </div>
     </div>
