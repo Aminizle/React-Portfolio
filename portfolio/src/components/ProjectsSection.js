@@ -37,7 +37,7 @@ const PastProjects = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white ">
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white max-width">
         <div className="basis-1/3 flex-1 rounded-lg">
           <a href="https://ameentravel.netlify.app/" target="_blank" rel="noreferrer">
             <img src={travel} alt="Project 3" className="rounded-lg " />

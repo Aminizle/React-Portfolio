@@ -9,6 +9,7 @@ import OpenPdfButton from "./components/ResumeButton";
 import PastProjects from "./components/ProjectsSection";
 import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
+import Skills from "./components/Skills";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,13 +41,11 @@ function App() {
                 creating and implementing successful front-end and back-end web
                 applications. My eagerness to learn and proven track record
                 demonstrates my commitment to delivering high-quality results
-                and exceeding expectations.
+                and exceeding expectations.</p>
+
                 <VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />
-                Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
-                CSS/Bootstrap, Next.js/React.js, Node.js, Express/Axios and
-                MongoDB/PostgreSQL, offering a wide range of technical knowledge
-                for robust and scalable solutions.
-              </p>
+               <Skills />
+              
               <OpenPdfButton />
 
               <a href="#Projects">
