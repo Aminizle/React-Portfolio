@@ -85,31 +85,27 @@ const Skills = () => {
         <ul className="list-disc pl-5">
           <li className="flex">
             <SiMongodb />
-            Version control systems such as Git and SVN
+            Version control: Git
           </li>
           <li className="flex">
             <SiMongodb />
-            Project management tools like Trello, Asana, JIRA
+            Project management: Trello, JIRA &  Azure DevOps
           </li>
           <li className="flex">
             <SiMongodb />
-            Collaboration tools: Slack, Microsoft Teams, Zoom
+            Collaboration tools: Slack, Microsoft Teams, Confluence
           </li>
           <li className="flex">
             <SiMongodb />
-            IDEs such as Visual Studio Code & intellij{" "}
+            integrated development environment (IDE): Visual Studio Code & intellij
+          </li>          
+          <li className="flex">
+            <SiMongodb />
+            Continuous integration and deployment (CI/CD): Jenkins & Azure DevOps
           </li>
           <li className="flex">
             <SiMongodb />
-            Azure Devops
-          </li>
-          <li className="flex">
-            <SiMongodb />
-            Continuous integration and deployment (CI/CD) tools like Jenkins
-          </li>
-          <li className="flex">
-            <SiMongodb />
-            postman
+            API testing: Postman
           </li>
         </ul>
       </div>
@@ -117,8 +113,22 @@ const Skills = () => {
         <h3 className="text-xl font-bold">Softkills</h3>
         <ul className="list-disc pl-5">
           <li>
-            Offering a wide range of technical knowledge for robust and scalable
-            solutions.
+           Agile Scrum
+          </li>
+          <li>
+           kanaban
+          </li>
+          <li>
+           Agile Scrum
+          </li>
+          <li>
+           Agile Scrum
+          </li>
+          <li>
+           Agile Scrum
+          </li>
+          <li>
+           Agile Scrum
           </li>
         </ul>
       </div>
