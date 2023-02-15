@@ -51,7 +51,7 @@ const NavBar = () => {
             <li className="mr-3">
               <a
                 className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="#landing"
+                href="#Landing"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 About Me
