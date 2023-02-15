@@ -1,6 +1,8 @@
-My Portfolio
+Ameen Mohiyuddin - Web Developer & Designer
 
-This is my personal portfolio website, built with React and styled with Tailwind CSS. The site showcases my skills and experiences as a web developer, as well as my personal projects and interests.
+Welcome to my personal portfolio website!
+
+I'm a web developer with a passion for clean, beautiful code and an eye for design. Here you'll find a showcase of my skills and experiences, as well as my personal projects and interests.
 
 This portfolio is hosted on Netlify at: 
 https://ameen-mohiyuddin-portfolio.netlify.app/. 
