@@ -11,7 +11,7 @@ function Landing() {
         <h3 className="text-2xl py-2 md:text-3xl text-cyan-600 ">
           Full Stack Software Engineer
         </h3>
-        <p className="text-md py-5 leading-8  md:text-xl max-w-lg mx-auto text-gray-800 dark:text-gray-500">
+        <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
           Hey there! 👋 <br></br>I'm a full-stack web wizard with a passion for
           crafting incredible user experiences. Having a strong background in
           software quality assurance and automation, I approach technical
