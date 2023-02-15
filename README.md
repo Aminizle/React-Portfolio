@@ -1,4 +1,4 @@
-<h1>Ameen Mohiyuddin - Web Developer &amp; Designer</h1>
+<h1>Ameen Mohiyuddin - Full Stack Software Engineer</h1>
 
 <p>Welcome to my personal portfolio website!</p>
 
