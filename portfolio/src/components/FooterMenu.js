@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 
 function FooterMenu() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-4">
+    <footer className="bg-gray-800 text-gray-300 py-2">
       <nav className="container mx-auto">
         <div>
           <h2 className="flex justify-center dark:text-gray-200 ">
@@ -76,6 +76,8 @@ function FooterMenu() {
             </a>
           </li>
         </ul>
+        <p>Made by Ameen Mohiyuddin with <span className="text-red-600 animate-pulse">❤</span> | All rights reserved</p>
+  
       </nav>
     </footer>
   );

@@ -24,7 +24,10 @@ import frontEnd2 from "../assets/frontEnd2.jpg";
 
 const Skills = () => {
   return (
-    <section id="Skills" className="mt-48">
+    <section id="Skills" className="mb-28">
+    <h3 className="text-3xl my-10 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
+          Technical Skills
+        </h3>
       <div className="grid gap-10 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 text-white">
         <div className="w-96 mx-auto bg-cyan-500 rounded-lg">
           <div className="relative h-56 ">
