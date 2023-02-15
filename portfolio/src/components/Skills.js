@@ -1,25 +1,7 @@
 import React from "react";
-import {
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiBootstrap,
-  SiReact,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiPostgresql,
-  SiStrapi,
-} from "react-icons/si";
 
-import backEnd1 from "../assets/backEnd1.jpg";
 import backEnd2 from "../assets/backEnd2.jpg";
-import backEnd3 from "../assets/backEnd3.jpg";
 import developmentTools from "../assets/developmentTools.jpg";
-import frontEnd1 from "../assets/frontEnd1.jpg";
 import frontEnd2 from "../assets/frontEnd2.jpg";
 
 const Skills = () => {
@@ -110,7 +92,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="mt-10 text-gray-800 dark:text-gray-500 ">
-      <p>CodeWars Profile</p>
+        <p>CodeWars Profile</p>
         <h2 className="flex justify-center ">
           <a
             target="_blank"

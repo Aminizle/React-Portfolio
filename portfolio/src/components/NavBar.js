@@ -14,9 +14,9 @@ const NavBar = () => {
             onClick={() => setDarkMode(!darkMode)}
             className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
           /> */}
-          <a className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-white">
+          <span className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-white">
             {"<Dev Ameen />"}
-          </a>
+          </span>
         </div>
         <div className="block lg:hidden pr-4">
           <button
