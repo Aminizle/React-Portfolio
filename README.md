@@ -1,55 +1,54 @@
-Ameen Mohiyuddin - Web Developer & Designer
+<h1>Ameen Mohiyuddin - Web Developer &amp; Designer</h1>
 
-Welcome to my personal portfolio website!
+<p>Welcome to my personal portfolio website!</p>
 
-I'm a web developer with a passion for clean, beautiful code and an eye for design. Here you'll find a showcase of my skills and experiences, as well as my personal projects and interests.
+<p>I'm a web developer with a passion for clean, beautiful code and an eye for design. Here you'll find a showcase of my skills and experiences, as well as my personal projects and interests.</p>
 
-This portfolio is hosted on Netlify at: 
-https://ameen-mohiyuddin-portfolio.netlify.app/. 
+<p>My portfolio is hosted on Netlify at <a href="https://ameen-mohiyuddin-portfolio.netlify.app/">https://ameen-mohiyuddin-portfolio.netlify.app/</a>.</p>
 
-Feel free to check it out and let me know what you think!
+<h2>Technologies Used</h2>
 
-Technologies Used
+<ul>
+  <li>React</li>
+  <li>Tailwind CSS</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>@material-tailwind/react</li>
+</ul>
 
-    React
-    Tailwind CSS
-    HTML
-    CSS
-    JavaScript
+<h2>Features</h2>
 
-Features
+<ul>
+  <li>Responsive design for desktop and mobile</li>
+  <li>Navigation menu with smooth scrolling</li>
+  <li>Skills and experiences section</li>
+  <li>Past projects</li>
+  <li>Contact form with form validation</li>
+</ul>
 
-    Responsive design for desktop and mobile
-    Navigation menu with smooth scrolling
-    Skills and experiences section
-    Past projects
-    Contact form with form validation
+<h2>Getting Started</h2>
 
-Getting Started
+<p>To get started, clone the repository to your local machine:</p>
 
-    Clone the repository to your local machine:
+<pre><code>git clone https://github.com/yourusername/your-portfolio.git
+</code></pre>
 
-    bash
+<p>Then install the required dependencies:</p>
 
-git clone https://github.com/yourusername/your-portfolio.git
-
-Install the required dependencies:
-
-bash
-
-cd your-portfolio
+<pre><code>cd your-portfolio
 npm install
+</code></pre>
 
-Start the development server:
+<p>Start the development server:</p>
 
-sql
+<pre><code>npm start
+</code></pre>
 
-    npm start
+<p>Then open your web browser and go to <a href="http://localhost:3000">http://localhost:3000</a> to see the website.</p>
 
-    Open your web browser and go to http://localhost:3000 to see the website.
+<h2>License</h2>
 
-License
+<p>This project is licensed under the MIT License. Feel free to use and modify this code for your own portfolio.</p>
 
-This project is licensed under the MIT License. Feel free to use and modify this code for your own portfolio.
-
-Made by Ameen with ❤ 
+<p>Made with ❤ by Ameen</p>
