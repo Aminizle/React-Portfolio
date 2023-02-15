@@ -60,6 +60,15 @@ const NavBar = () => {
             <li className="mr-3">
               <a
                 className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
+                href="#Skills"
+                onClick={() => setIsOpen(!isOpen)}
+              >
+                Skills
+              </a>
+            </li>
+            <li className="mr-3">
+              <a
+                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href="#Projects"
                 onClick={() => setIsOpen(!isOpen)}
               >
