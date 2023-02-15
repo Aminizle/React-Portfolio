@@ -1,17 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@material-tailwind/react";
 import { IoMdCopy } from "react-icons/io";
 
 function ContactForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(`Name: ${name} Email: ${email} Message: ${message}`);
-  };
-
+  
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("AmeenMohiyuddin2022@gmail.com");
   };
@@ -29,7 +21,7 @@ function ContactForm() {
       <div>
         <div className="grid lg:grid-cols-2 gap-10 py-10  text-white rounded-lg">
           <form
-            onSubmit={handleSubmit}
+            onSubmit="submit"
             name="contact"
             method="POST"
             data-netlify="true"
@@ -40,9 +32,7 @@ function ContactForm() {
                 Name
               </label>
               <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                type="text"                             
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -51,9 +41,7 @@ function ContactForm() {
                 Email
               </label>
               <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type="email"                              
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -62,9 +50,7 @@ function ContactForm() {
                 Message
               </label>
               <textarea
-                rows="5"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                rows="5"                              
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
