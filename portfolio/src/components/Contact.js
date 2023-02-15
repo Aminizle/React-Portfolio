@@ -32,7 +32,8 @@ function ContactForm() {
                 Name
               </label>
               <input
-                type="text"                             
+                type="text"  
+                name="name"                           
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -41,7 +42,8 @@ function ContactForm() {
                 Email
               </label>
               <input
-                type="email"                              
+                type="email"    
+                name="email"                          
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
