@@ -23,9 +23,9 @@ function ContactForm() {
             onSubmit="submit"
             name="contact"
             method="post"
-            action="/contact"
-            netlify
-            data-netlify-honeypot="bot-field"
+            
+           
+       
           >
             <input type="hidden" name="form-name" value="contact">
               {" "}
@@ -37,7 +37,7 @@ function ContactForm() {
               <input
                 type="text"
                 name="name"
-                required
+                
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -48,7 +48,7 @@ function ContactForm() {
               <input
                 type="email"
                 name="email"
-                required
+             
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -57,7 +57,7 @@ function ContactForm() {
                 Message
               </label>
               <textarea
-                required
+             
                 name="message"
                 rows="5"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
