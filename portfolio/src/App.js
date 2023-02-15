@@ -33,24 +33,20 @@ function App() {
                 Ameen Mohiyuddin
               </h2>
               <h3 className="text-2xl py-2 md:text-3xl text-cyan-600 ">
-                Full Stack software engineer
+                Full Stack Software Engineer
               </h3>
-              <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500 transition-opacity ease-in duration-700 opacity-100">
-                I am a full stack web developer with a solid background in
-                software quality assurance and automation. I have a passion for
-                creating and implementing successful front-end and back-end web
-                applications. My eagerness to learn and proven track record
-                demonstrates my commitment to delivering high-quality results
-                and exceeding expectations.</p>
+              <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
+    Hey there! 👋 <br></br>I'm a full-stack web wizard with a passion for crafting incredible user experiences. Having a strong background in software quality assurance and automation, I approach technical problems with the end user in mind. As both a one-person powerhouse and a Scrum team player in Agile environments, I can seamlessly integrate into any existing workflow and bring some serious energy to the table. Let me put my skills to work for you!
+    <br></br><VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />
+    When I'm not honing my software development skills, you can find me cruising around on my motorcycle, exploring new roads and pushing my limits. 🏍️
+</p>
 
-                <VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />
-               <Skills />
               
+
               <OpenPdfButton />
 
-              <a href="#Projects">
-                <BsFillArrowDownCircleFill className="mx-auto text-4xl text-cyan-500 hover:text-teal-500 animate-bounce mt-10" />
-              </a>
+              
+              <Skills />
             </div>
           </section>
           <PastProjects />

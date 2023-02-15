@@ -24,7 +24,7 @@ const PastProjects = () => {
           With a focus on delivering seamless{" "}
           <span className="text-cyan-500"> user experience</span>, I have
           leveraged the power of <span className="text-cyan-500"> API's </span>{" "}
-          to bring data from some of the most exciting sources to life. From
+          to bring data from some of the most exciting sources of life. From
           exploring the depths of space with NASA to diving into the Marvel
           Cinematic Universe, my projects are a testament to my ability to bring
           your wildest ideas to life.
@@ -33,7 +33,7 @@ const PastProjects = () => {
           <VscDebugBreakpointLog className="my-2 mx-auto text-cyan-600" />          
           So, buckle up and prepare for a journey
           through the best that <span className="text-cyan-500"> design </span>{" "}
-          and technology have to offer.
+          and technology has to offer.
         </p>
       </div>
 
@@ -45,9 +45,9 @@ const PastProjects = () => {
           <div className="grid md:grid-cols-2 m-3">
         
             <p className="text-left text-sm">  <span className="text-center text-lg font-bold">Travel More, Worry Less</span><br></br>
-              A single-page travel site, designed to be fully responsive and
+              Discover the world through this single-page travel site, designed to be fully responsive and
               optimized for all screen sizes, offering a wealth of features that
-              prioritize user experience. The site features a convenient
+              prioritizes user experience. The site features a convenient
               navigation menu, seamless integration with social media, and a
               visually stunning video background.
             </p>
@@ -153,7 +153,7 @@ const PastProjects = () => {
               fingertips. Get up close and personal with each picture,
               accompanied by a descriptive title and insightful explanation. And
               don't forget to share your interstellar adventures with your
-              friends and followers through our integrated social media links.
+              friends and followers through the integrated social media links.
               Get ready for a truly out-of-this-world experience!
             </p>
             <div>

@@ -24,9 +24,9 @@ import frontEnd2 from "../assets/frontEnd2.jpg";
 
 const Skills = () => {
   return (
-    <section id="Skills">
+    <section id="Skills" className="mt-48">
       <div className="grid gap-10 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 text-white">
-        <div className="w-96 mx-auto bg-yellow-600 rounded-lg">
+        <div className="w-96 mx-auto bg-cyan-500 rounded-lg">
           <div className="relative h-56 ">
             <img
               src={frontEnd2}
@@ -56,7 +56,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="w-96 mx-auto bg-yellow-600 rounded-lg">
+        <div className="w-96 mx-auto bg-cyan-500 rounded-lg">
           <div className="relative h-56">
             <img
               src={backEnd2}
@@ -79,7 +79,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="w-96 mx-auto bg-yellow-600 rounded-lg">
+        <div className="w-96 mx-auto bg-cyan-500 rounded-lg">
           <div className="relative h-56">
             <img
               src={developmentTools}
