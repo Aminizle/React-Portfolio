@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+// import { BsFillMoonStarsFill } from "react-icons/bs";
 import Pdf from "../assets/Resume.pdf";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 
   return (
     <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50 hover:bg-teal-500 py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex dark:text-gray-200">
-          <BsFillMoonStarsFill
+          {/* <BsFillMoonStarsFill
             onClick={() => setDarkMode(!darkMode)}
             className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
-          />
-          <a className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-gray-800">
+          /> */}
+          <a className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-white">
             {"<Dev Ameen />"}
           </a>
         </div>

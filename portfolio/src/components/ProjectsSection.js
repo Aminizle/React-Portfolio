@@ -37,14 +37,14 @@ const PastProjects = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-white max-width">
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-gray-800 dark:text-gray-500 max-width">
         <div className="basis-1/3 flex-1 rounded-lg">
           <a href="https://ameentravel.netlify.app/" target="_blank" rel="noreferrer">
             <img src={travel} alt="Project 3" className="rounded-lg " />
           </a>
           <div className="grid md:grid-cols-2 m-3">
         
-            <p className="text-left text-sm">  <span className="text-center text-lg font-bold">Travel More, Worry Less</span><br></br>
+            <p className="text-left text-sm">  <span className="text-center text-lg font-bold ">Travel More, Worry Less</span><br></br>
               Discover the world through this single-page travel site, designed to be fully responsive and
               optimized for all screen sizes, offering a wealth of features that
               prioritizes user experience. The site features a convenient
@@ -59,7 +59,7 @@ const PastProjects = () => {
                 <li>JavaScript</li>
               </ul>
               <div className="inline-flex items-center my-2">
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://ameentravel.netlify.app/"
                     className="inline-flex items-center"
@@ -70,7 +70,7 @@ const PastProjects = () => {
                     <GiAirplaneDeparture className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://github.com/Aminizle/travel-site"
                     className="inline-flex items-center"
@@ -113,7 +113,7 @@ const PastProjects = () => {
                 <li>JavaScript</li>
               </ul>
               <div className="inline-flex items-center my-2">
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://marvel-cinematic-universe.netlify.app/"
                     className="inline-flex items-center"
@@ -124,7 +124,7 @@ const PastProjects = () => {
                     <BiCameraMovie className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://github.com/Aminizle/Marvel"
                     className="inline-flex items-center"
@@ -164,7 +164,7 @@ const PastProjects = () => {
                 <li>JavaScript</li>
               </ul>
               <div className="inline-flex items-center my-2">
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://nasa-picture-archive.netlify.app/"
                     className="inline-flex items-center"
@@ -175,7 +175,7 @@ const PastProjects = () => {
                     <GoTelescope className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://github.com/Aminizle/NASA"
                     className="inline-flex items-center"
@@ -215,7 +215,7 @@ const PastProjects = () => {
                 <li>JavaScript</li>
               </ul>
               <div className="inline-flex items-center my-2">
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://last-expression.netlify.app/"
                     className="inline-flex items-center"
@@ -226,7 +226,7 @@ const PastProjects = () => {
                     <AiFillCamera className="ml-2 hover:scale-125" />
                   </a>
                 </Button>
-                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide dark:text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
+                <Button className="mx-1 bg-cyan-500 hover:bg-teal-500 text-wide text-white p-1 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 ">
                   <a
                     href="https://github.com/Aminizle/Bilal-Photography"
                     className="inline-flex items-center"
