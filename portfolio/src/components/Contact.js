@@ -3,7 +3,6 @@ import { Button } from "@material-tailwind/react";
 import { IoMdCopy } from "react-icons/io";
 
 function ContactForm() {
-  
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("AmeenMohiyuddin2022@gmail.com");
   };
@@ -23,17 +22,22 @@ function ContactForm() {
           <form
             onSubmit="submit"
             name="contact"
-            method="POST"
-            netlify 
+            method="post"
+            action="/contact"
+            netlify
             data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact">
+              {" "}
+            </input>
             <div className="mb-5">
               <label className="text-left block text-gray-700 font-bold mb-2">
                 Name
               </label>
               <input
-                type="text"  
-                name="name"                           
+                type="text"
+                name="name"
+                required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -42,8 +46,9 @@ function ContactForm() {
                 Email
               </label>
               <input
-                type="email"    
-                name="email"                          
+                type="email"
+                name="email"
+                required
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -52,7 +57,9 @@ function ContactForm() {
                 Message
               </label>
               <textarea
-                rows="5"                              
+                required
+                name="message"
+                rows="5"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
