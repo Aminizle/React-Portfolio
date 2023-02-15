@@ -33,6 +33,7 @@ function ContactForm() {
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <div className="mb-5">
               <label className="text-left block text-gray-700 font-bold mb-2">
