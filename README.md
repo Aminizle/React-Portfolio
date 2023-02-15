@@ -1,6 +1,12 @@
 My Portfolio
 
 This is my personal portfolio website, built with React and styled with Tailwind CSS. The site showcases my skills and experiences as a web developer, as well as my personal projects and interests.
+
+This portfolio is hosted on Netlify at: 
+https://ameen-mohiyuddin-portfolio.netlify.app/. 
+
+Feel free to check it out and let me know what you think!
+
 Technologies Used
 
     React
@@ -13,8 +19,8 @@ Features
 
     Responsive design for desktop and mobile
     Navigation menu with smooth scrolling
-    Skills and experiences section with progress bars
-    Portfolio section with project cards
+    Skills and experiences section
+    Past projects
     Contact form with form validation
 
 Getting Started
