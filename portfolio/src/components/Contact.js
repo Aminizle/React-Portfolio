@@ -24,7 +24,7 @@ function ContactForm() {
             onSubmit="submit"
             name="contact"
             method="POST"
-            data-netlify="true"
+            netlify 
             data-netlify-honeypot="bot-field"
           >
             <div className="mb-5">
