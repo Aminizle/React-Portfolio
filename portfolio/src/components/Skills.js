@@ -25,9 +25,10 @@ import frontEnd2 from "../assets/frontEnd2.jpg";
 const Skills = () => {
   return (
     <section id="Skills" className="mb-28">
-    <h3 className="text-3xl my-10 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
-          Technical Skills
-        </h3>
+      <h3 className="text-3xl my-10 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
+        Technical Skills
+      </h3>
+
       <div className="grid gap-10 grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 text-white">
         <div className="w-96 mx-auto bg-cyan-500 rounded-lg">
           <div className="relative h-56 ">
@@ -107,6 +108,27 @@ const Skills = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-10 text-gray-800 dark:text-gray-500 ">
+      <p>CodeWars Profile</p>
+        <h2 className="flex justify-center ">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.codewars.com/users/DevAmeenM"
+          ></a>
+        </h2>
+        <a
+          className="flex justify-center hover:scale-110"
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.codewars.com/users/DevAmeenM"
+        >
+          <img
+            src="https://www.codewars.com/users/DevAmeenM/badges/large"
+            alt="codewars badge large"
+          />
+        </a>
       </div>
     </section>
   );

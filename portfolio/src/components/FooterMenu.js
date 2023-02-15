@@ -12,27 +12,8 @@ function FooterMenu() {
   return (
     <footer className="bg-gray-800 text-gray-300 py-2">
       <nav className="container mx-auto">
-        <div>
-          <h2 className="flex justify-center dark:text-gray-200 ">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.codewars.com/users/DevAmeenM"
-            ></a>
-          </h2>
-          <a
-            className="flex justify-center hover:scale-125"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.codewars.com/users/DevAmeenM"
-          >
-            <img
-              src="https://www.codewars.com/users/DevAmeenM/badges/micro"
-              alt="codewars badge large"
-            />
-          </a>
-        </div>
-        <ul className="flex justify-center mt-5 text-cyan-500 cursor-pointer text-3xl ">
+        
+        <ul className="flex justify-center my-3 text-cyan-500 cursor-pointer text-3xl ">
           <li>
             <a
               href="https://twitter.com/DevAmeenM"
