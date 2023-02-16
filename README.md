@@ -42,6 +42,9 @@
   <li>Contact form with form validation</li>
 </ul>
 
+<h2>View Live</h2>
+<p>My portfolio is hosted on Netlify at <a href="https://ameen-mohiyuddin-portfolio.netlify.app/">https://ameen-mohiyuddin-portfolio.netlify.app/</a>.</p>
+
 <h2>Getting Started</h2>
 
 <p>To get started, clone the repository to your local machine:</p>
