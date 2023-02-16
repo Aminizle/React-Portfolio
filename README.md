@@ -2,6 +2,21 @@
 
 <p>Welcome to my personal portfolio website!</p>
 
+<div align="center" >  
+				<a href='https://ameen-mohiyuddin-portfolio.netlify.app/'>
+					<img src="portfolio/src/assets/portfolio.gif" height="100%" />
+				</a>
+				<br>
+				<br>
+				<p>					
+					<a href="https://ameen-mohiyuddin-portfolio.netlify.app/" target="_blank">
+						<img src="https://img.shields.io/badge/-website-green?style=for-the-badge&color=0CA4BD"/>
+					</a>	
+				</p>
+				<p><strong>React, Tailwind CSS, JavaScript, CSS3, HTML5</strong> - My Personal Portfolio showcasing some of my work and how to get in touch with me.</p>
+			</div>
+
+
 <p>I'm a web developer with a passion for clean, beautiful code and an eye for design. Here you'll find a showcase of my skills and experiences, as well as my personal projects and interests.</p>
 
 <p>My portfolio is hosted on Netlify at <a href="https://ameen-mohiyuddin-portfolio.netlify.app/">https://ameen-mohiyuddin-portfolio.netlify.app/</a>.</p>
