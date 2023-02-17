@@ -15,7 +15,9 @@ const NavBar = () => {
             className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
           /> */}
           <span className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-white">
-            {"<Dev Ameen />"}
+            <a href="#Landing">
+              {"<Dev Ameen />"}
+            </a>
           </span>
         </div>
         <div className="block lg:hidden pr-4">
