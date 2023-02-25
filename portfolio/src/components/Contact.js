@@ -7,6 +7,7 @@ function ContactForm() {
     navigator.clipboard.writeText("AmeenMohiyuddin2022@gmail.com");
   };
 
+  
   return (
     <section id="contact">
       <div>
