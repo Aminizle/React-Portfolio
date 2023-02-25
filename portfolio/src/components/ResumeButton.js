@@ -1,6 +1,7 @@
 import { Button } from "@material-tailwind/react";
 import React, { Component } from "react";
 import Pdf from "../assets/Resume.pdf";
+import {GrDownload} from "react-icons/gr";
 
 class OpenPdfButton extends Component {
   render() {
@@ -10,8 +11,14 @@ class OpenPdfButton extends Component {
           <a href={Pdf} target="_blank" rel="noreferrer">
             View my Resumé
           </a>
+        <Button className=" bg-cyan-500 hover:bg-teal-500 text-wide my-16 text-white px-4 py-2 rounded-md shadow-xl hover:shadow-cyan-500/50 hover:scale-110 mx-auto">
+          <a href={Pdf} download="Pdf" target="_blank" rel="noreferrer">
+            <GrDownload/>
+          </a>
+        </Button>
         </Button>
       </div>
+      
     );
   }
 }
