@@ -60,7 +60,7 @@ function ContactForm() {
             <div className="flex items-center justify-between">
               <Button
                 type="submit"
-                className="bg-cyan-500 hover:bg-teal-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                className="bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Send
               </Button>
@@ -92,7 +92,8 @@ function ContactForm() {
               </p>
               <Button
                 onClick={handleCopyEmail}
-                className="hover:bg-teal-500 bg-cyan-500 text-white font-bold py-2 px-4 rounded-l-none  focus:outline-none focus:shadow-outline"
+                className="hover:bg-cyan-400 bg-cyan-500 text-white font-bold py-2 px-4 rounded-l-none  focus:outline-none focus:shadow-outline"
+                title="Click to copy my email address"
               >
                 <IoMdCopy className="text-2xl " />
               </Button>

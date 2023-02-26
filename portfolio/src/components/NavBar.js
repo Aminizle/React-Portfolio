@@ -7,7 +7,7 @@ const NavBar = () => {
   // const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50 hover:bg-teal-500 py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
+    <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50 hover:bg-cyan-400 py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex dark:text-gray-200">
           {/* <BsFillMoonStarsFill
@@ -23,7 +23,7 @@ const NavBar = () => {
         <div className="block lg:hidden pr-4">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-teal-500 appearance-none focus:outline-none"
+            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-cyan-400 appearance-none focus:outline-none"
           >
             <svg
               className="fill-current h-3 w-3"
@@ -47,7 +47,7 @@ const NavBar = () => {
         <div
           className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
             isOpen ? "block" : "hidden"
-          } lg:block mt-2 lg:mt-0 teal-500 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
+          } lg:block mt-2 lg:mt-0 cyan-400 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center text-lg">
             <li className="mr-3">

@@ -20,7 +20,7 @@ function FooterMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillTwitterCircle className="mx-5 hover:scale-125 hover:text-teal-500" />
+              <AiFillTwitterCircle className="mx-5 hover:scale-125 hover:text-cyan-400" />
             </a>
           </li>
           <li>
@@ -29,7 +29,7 @@ function FooterMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillLinkedin className="mx-5 hover:scale-125 hover:text-teal-500" />
+              <AiFillLinkedin className="mx-5 hover:scale-125 hover:text-cyan-400" />
             </a>
           </li>
 
@@ -39,7 +39,7 @@ function FooterMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillGithub className="mx-5 hover:scale-125 hover:text-teal-500" />
+              <AiFillGithub className="mx-5 hover:scale-125 hover:text-cyan-400" />
             </a>
           </li>
           <li>
@@ -48,12 +48,12 @@ function FooterMenu() {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillYoutube className="mx-5 hover:scale-125 hover:text-teal-500" />
+              <AiFillYoutube className="mx-5 hover:scale-125 hover:text-cyan-400" />
             </a>
           </li>
           <li>
             <a className="font-medium text-xl " href="#contact">
-              <MdEmail className="mx-5 hover:scale-125 text-3xl hover:text-teal-500" />
+              <MdEmail className="mx-5 hover:scale-125 text-3xl hover:text-cyan-400" />
             </a>
           </li>
         </ul>
