@@ -7,7 +7,7 @@ const NavBar = () => {
   // const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50 hover:bg-cyan-400 py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
+    <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50  py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex dark:text-gray-200">
           {/* <BsFillMoonStarsFill
