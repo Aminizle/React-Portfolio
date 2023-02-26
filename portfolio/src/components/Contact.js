@@ -11,10 +11,10 @@ function ContactForm() {
   return (
     <section id="contact">
       <div>
-        <h3 className="text-3xl mb-5 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
+        <h3 className="text-3xl mb-5 md:text-4xl max-w-lg mx-auto text-gray-200">
           Let's Connect
         </h3>
-        <p className="text-md py-2 leading-8 d:text-xl max-w-lg mx-auto dark:text-gray-500">
+        <p className="text-md py-2 leading-8 d:text-xl max-w-lg mx-auto text-gray-200">
           Looking for a new developer or just want to chat?
         </p>
       </div>
@@ -28,33 +28,33 @@ function ContactForm() {
           >
           <input type="hidden" name="form-name" value="contact"/>
             <div className="mb-5">
-              <label className="text-left block text-gray-700 font-bold mb-2">
+              <label className="text-left block text-gray-200 font-bold mb-2">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="mb-5">
-              <label className="text-left block text-gray-700 font-bold mb-2">
+              <label className="text-left block text-gray-200 font-bold mb-2">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="mb-5">
-              <label className="text-left block text-gray-700 font-bold mb-2">
+              <label className="text-left block text-gray-200 font-bold mb-2">
                 Message
               </label>
               <textarea
                 rows="5"
                 name="message"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline"
               />
             </div>
             <div className="flex items-center justify-between">
@@ -68,7 +68,7 @@ function ContactForm() {
           </form>
           <div className="basis-1/3 flex-1 rounded-lg mx-auto max-w-lg">
             <div className="my-20">
-              <p className="text-gray-800 dark:text-gray-500">
+              <p className="text-gray-200 ">
                 Whether you need a{" "}
                 <span className="text-cyan-500">one-person powerhouse </span>
                 or a{" "}

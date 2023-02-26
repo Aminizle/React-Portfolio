@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
 import Landing from "./components/Landing";
+import Particle from "./components/Particle";
 
 function App() {
   return (
@@ -20,15 +21,16 @@ function App() {
         />
         <meta name="theme-color" content="#06b6d4" />
       </Helmet>
-      <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+      <Particle className="-z-10 absolute" />
+      <main className="z-1 relative px-10 md:px-20 lg:px-40 ">
         <NavBar />
         <Landing />
-<OpenPdfButton />
-        <Skills />        
+        <OpenPdfButton />
+        <Skills />
         <PastProjects />
         <Contact />
-      </main>
-      <FooterMenu />
+        <FooterMenu />
+      </main>      
     </div>
   );
 }

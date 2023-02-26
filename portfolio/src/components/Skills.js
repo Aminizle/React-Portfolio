@@ -7,7 +7,7 @@ import frontEnd2 from "../assets/frontEnd2.jpg";
 const Skills = () => {
   return (
     <section id="Skills" className="mb-28">
-      <h3 className="text-3xl my-10 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
+      <h3 className="text-3xl my-10 md:text-4xl max-w-lg mx-auto text-gray-200">
         Technical Skills
       </h3>
 
@@ -91,7 +91,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 text-gray-800 dark:text-gray-500 ">
+      <div className="mt-10 text-gray-200 ">
         <p>CodeWars Profile</p>
         <h2 className="flex justify-center ">
           <a
