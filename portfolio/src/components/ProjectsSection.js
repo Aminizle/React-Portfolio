@@ -17,7 +17,7 @@ const PastProjects = () => {
         <h3 className="text-3xl mb-5 md:text-4xl max-w-lg mx-auto text-gray-200">
           Projects
         </h3>
-        <p className="text-md py-2 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto text-gray-200">
+        <p className="text-md py-2 leading-8 md:text-xl max-w-lg mx-auto text-gray-200">
           Step into a world of creativity, innovation and user-centered design.
           In my projects section, you will discover a portfolio of works that
           showcase my passion for pushing the boundaries of what's possible.
@@ -37,7 +37,7 @@ const PastProjects = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-gray-800 text-gray-200 max-width">
+      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap text-gray-200 max-width">
         <div className="basis-1/3 flex-1 rounded-lg">
           <a href="https://ameentravel.netlify.app/" target="_blank" rel="noreferrer">
             <img src={travel} alt="Project 3" className="rounded-lg " />
