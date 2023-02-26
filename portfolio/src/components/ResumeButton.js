@@ -7,7 +7,7 @@ class OpenPdfButton extends Component {
   render() {
     return (
       <div className="flex bg-cyan-500 hover:bg-cyan-400 hover:shadow-cyan-400/50 hover:scale-110 shadow-xl rounded-md my-16 w-60 mx-auto justify-between">
-        <Button className="px-6 rounded-r-none ">
+        <Button className="px-6 rounded-r-none py-2">
           <a href={Pdf} target="_blank" rel="noreferrer">
             View my Resumé
           </a>
