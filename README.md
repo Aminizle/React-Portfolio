@@ -1,6 +1,5 @@
-<h1>Ameen Mohiyuddin - Full Stack Software Engineer</h1>
-
-<p>Welcome to my personal portfolio website!</p>
+<h1 align="center" >Ameen Mohiyuddin - Full Stack Software Engineer</h1>
+<p align="center" > 👋 Welcome to my personal portfolio website!</p>
 
 <div align="center" >  
 				<a href='https://ameen-mohiyuddin-portfolio.netlify.app/'>
