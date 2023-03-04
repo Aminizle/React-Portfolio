@@ -1,6 +1,5 @@
-<h1>Ameen Mohiyuddin - Full Stack Software Engineer</h1>
-
-<p>Welcome to my personal portfolio website!</p>
+<h1 align="center" >Ameen Mohiyuddin - Full Stack Software Engineer</h1>
+<p align="center" > 👋 Welcome to my personal portfolio website!</p>
 
 <div align="center" >  
 				<a href='https://ameen-mohiyuddin-portfolio.netlify.app/'>
@@ -17,7 +16,8 @@
 			</div>
 
 
-<p>I'm a web developer with a passion for clean, beautiful code and an eye for design. Here you'll find a showcase of my skills and experiences, as well as my personal projects and interests.</p>
+<p align="center" >I'm a full-stack web wizard with a passion for crafting incredible user experiences. Having a strong background in software quality assurance and automation, I approach technical problems with the end user in mind. As both a one-person powerhouse and a Scrum team player in Agile environments, I can seamlessly integrate into any existing workflow and bring some serious energy to the table. Let me put my skills to work for you!</p
+<p align="center" >When I'm not honing my software development skills, you can find me cruising around on my motorcycle, exploring new roads and pushing my limits. 🏍️</p>
 
 <p>My portfolio is hosted on Netlify at <a href="https://ameen-mohiyuddin-portfolio.netlify.app/">https://ameen-mohiyuddin-portfolio.netlify.app/</a>.</p>
 
