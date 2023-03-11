@@ -69,4 +69,4 @@ npm install
 
 <p>This project is licensed under the MIT License. Feel free to use and modify this code for your own portfolio.</p>
 
-<p>Made with ❤ by Ameen</p>
+<p align="center" >Made with ❤ by Ameen</p>
