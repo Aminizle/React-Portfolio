@@ -1,161 +1,165 @@
-import React, { useState } from "react";
-// import { BsFillMoonStarsFill } from "react-icons/bs";
+import React, { useState, useEffect } from "react";
+import { BsGithub, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
+import { SiCodewars } from "react-icons/si";
+import { HiDocumentText } from "react-icons/hi";
 import Pdf from "../assets/Resume.pdf";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [darkMode, setDarkMode] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const socialLinks = [
+    { icon: <BsLinkedin className="text-xl" />, url: "https://www.linkedin.com/in/ameen-mohiyuddin/" },
+    { icon: <BsGithub className="text-xl" />, url: "https://github.com/Aminizle" },
+    { icon: <BsTwitter className="text-xl" />, url: "https://twitter.com/DevAmeenM" },
+    { icon: <BsYoutube className="text-xl" />, url: "https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" },
+    { icon: <SiCodewars className="text-xl" />, url: "https://www.codewars.com/users/DevAmeenM" }
+  ];
+
+  const navLinks = [
+    { name: "About", href: "#Landing" },
+    { name: "Skills", href: "#Skills" },
+    { name: "Projects", href: "#Projects" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <nav className="fixed w-5/6 top-0 z-10 shadow-xl hover:shadow-cyan-500/50  py-1 mb-2 flex justify-between bg-cyan-500 rounded-xl rounded-t-none">
-      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div className="pl-4 flex dark:text-gray-200">
-          {/* <BsFillMoonStarsFill
-            onClick={() => setDarkMode(!darkMode)}
-            className="cursor-pointer text-2xl hover:scale-125 mx-4 animate-pulse"
-          /> */}
-          <span className="text-base xl:text-xl font-bold leading-relaxed inline-block mr-4 whitespace-no-wrap uppercase text-white">
-            <a href="#Landing">
-              {"<Dev Ameen />"}
-            </a>
-          </span>
-        </div>
-        <div className="block lg:hidden pr-4">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-cyan-400 appearance-none focus:outline-none"
+    <nav className={`fixed rounded-b-xl z-50 transition-all duration-300 ${scrolled ? "py-0 bg-cyan-600 shadow-lg" : "py-2 bg-cyan-500"}`}>
+      <div className="max-w-6xl mx-auto px-4"> {/* Changed container width */}
+        <div className="flex justify-between items-center">
+          {/* Logo/Brand - Reduced margin-right */}
+          <a 
+            href="#Landing" 
+            className="text-white text-xl font-bold hover:text-gray-100 transition-colors mr-4" // Changed from mr-8 to mr-4
+            onClick={() => setIsOpen(false)}
           >
-            <svg
-              className="fill-current h-3 w-3"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+            {"<DevAmeen />"}
+          </a>
+
+          {/* Centered Navigation - Now truly centered */}
+          <div className="hidden md:flex flex-grow justify-center">
+            <div className="flex space-x-6"> {/* Adjusted space between nav items */}
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-white hover:text-gray-100 font-medium transition-colors px-3 py-1" // Increased padding
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Right-aligned Resume and Social Icons */}
+          <div className="hidden md:flex items-center space-x-4 ml-auto"> {/* Reduced space between items */}
+            <a
+              href={Pdf}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center text-white hover:text-gray-100 font-medium transition-colors"
             >
-              {isOpen ? (
-                <path
-                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.828-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.828 4.828 4.828z"
-                  fill="currentColor"
-                />
-              ) : (
-                <path
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                  fill="currentColor"
-                />
-              )}
-            </svg>
-          </button>
+              <HiDocumentText className="mr-1" /> Resume
+            </a>
+            
+            <div className="flex space-x-3 ml-2"> {/* Reduced space between icons */}
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white hover:text-gray-100 transition-colors"
+                  aria-label={social.url.split('.')[1]}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
-        <div
-          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
-            isOpen ? "block" : "hidden"
-          } lg:block mt-2 lg:mt-0 cyan-400 lg:bg-transparent text-black p-4 lg:p-0 z-20`}
-        >
-          <ul className="list-reset lg:flex justify-end flex-1 items-center text-lg">
-            <li className="mr-3">
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden bg-cyan-600 rounded-lg mt-2 p-4 shadow-lg">
+            <div className="flex flex-col space-y-3">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="text-white hover:text-gray-100 font-medium transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ))}
+              
               <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="#Landing"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                About Me
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="#Skills"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Skills
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="#Projects"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Projects
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="#contact"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Contact Me
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
                 href={Pdf}
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => setIsOpen(!isOpen)}
+                className="flex items-center text-white hover:text-gray-100 font-medium transition-colors"
+                onClick={() => setIsOpen(false)}
               >
-                Resume
+                <HiDocumentText className="mr-2" /> Resume
               </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="https://www.linkedin.com/in/ameen-mohiyuddin/"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="https://github.com/Aminizle"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Github
-              </a>
-            </li>
-
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="https://twitter.com/DevAmeenM"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Twitter
-              </a>
-            </li>
-
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw"
-                target="_blank"
-                rel="noreferrer"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                Youtube
-              </a>
-            </li>
-            <li className="mr-3">
-              <a
-                className="inline-block text-white py-2 px-4 hover:text-gray-900 font-medium "
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.codewars.com/users/DevAmeenM"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                CodeWars
-              </a>
-            </li>
-          </ul>
-        </div>
+              
+              <div className="flex justify-center space-x-6 pt-2">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white hover:text-gray-100 transition-colors text-2xl"
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
