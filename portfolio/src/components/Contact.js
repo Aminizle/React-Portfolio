@@ -179,7 +179,7 @@ function ContactForm() {
           </form>
 
           <div className="flex flex-col justify-between">
-            <div className="bg-gray-800 p-8 rounded-xl shadow-lg h-full shadow-lg shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
+            <div className="bg-gray-800 p-8 rounded-xl shadow-lg h-full shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
               <div className="mb-8">
                 <h4 className="text-xl font-semibold text-gray-200 mb-4">Why contact me?</h4>
                 <p className="text-gray-300">

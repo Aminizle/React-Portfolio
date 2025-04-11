@@ -17,84 +17,84 @@ const NavBar = () => {
   }, []);
 
   const socialLinks = [
-    { icon: <BsLinkedin className="text-xl" />, url: "https://www.linkedin.com/in/ameen-mohiyuddin/" },
-    { icon: <BsGithub className="text-xl" />, url: "https://github.com/Aminizle" },
-    { icon: <BsTwitter className="text-xl" />, url: "https://twitter.com/DevAmeenM" },
-    { icon: <BsYoutube className="text-xl" />, url: "https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" },
-    { icon: <SiCodewars className="text-xl" />, url: "https://www.codewars.com/users/DevAmeenM" }
+    { icon: <BsLinkedin className="text-lg" />, url: "https://www.linkedin.com/in/ameen-mohiyuddin/" },
+    { icon: <BsGithub className="text-lg" />, url: "https://github.com/Aminizle" },
+    { icon: <BsTwitter className="text-lg" />, url: "https://twitter.com/DevAmeenM" },
+    { icon: <BsYoutube className="text-lg" />, url: "https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" },
+    { icon: <SiCodewars className="text-lg" />, url: "https://www.codewars.com/users/DevAmeenM" }
   ];
 
   const navLinks = [
-    { name: "About", href: "#Landing" },
     { name: "Skills", href: "#Skills" },
     { name: "Projects", href: "#Projects" },
     { name: "Contact", href: "#contact" },
   ];
 
   return (
-    <nav className={`fixed rounded-b-xl z-50 transition-all duration-300 ${scrolled ? "py-0 bg-cyan-600 shadow-lg" : "py-2 bg-cyan-500"}`}>
-      <div className="max-w-6xl mx-auto px-4"> {/* Changed container width */}
-        <div className="flex justify-between items-center">
-          {/* Logo/Brand - Reduced margin-right */}
-          <a 
-            href="#Landing" 
-            className="text-white text-xl font-bold hover:text-gray-100 transition-colors mr-4" // Changed from mr-8 to mr-4
+    <nav className={`sticky top-0 left-0 right-0 rounded-b-xl bg-gray-800 z-50 transition-all duration-300 ${
+      scrolled
+        ? "bg-cyan-600 shadow-none py-1" // Reduced padding when scrolled
+        : "bg-cyan-500 shadow-lg shadow-cyan-400/30 py-2" // Slightly more padding when at top
+    } hover:shadow-cyan-400/50`}>
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-between items-center h-12"> {/* Fixed height */}
+          {/* Logo - made more compact */}
+          <a
+            href="#Landing"
+            className="text-white text-lg font-bold hover:text-gray-100 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             {"<DevAmeen />"}
           </a>
 
-          {/* Centered Navigation - Now truly centered */}
-          <div className="hidden md:flex flex-grow justify-center">
-            <div className="flex space-x-6"> {/* Adjusted space between nav items */}
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-white hover:text-gray-100 font-medium transition-colors px-3 py-1" // Increased padding
-                >
-                  {link.name}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Right-aligned Resume and Social Icons */}
-          <div className="hidden md:flex items-center space-x-4 ml-auto"> {/* Reduced space between items */}
+          {/* Desktop Navigation - more compact */}
+          <div className="hidden md:flex items-center gap-6 h-full">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-white hover:text-gray-100 font-medium transition-colors text-sm px-2 h-full flex items-center" // Compact styling
+              >
+                {link.name}
+              </a>
+            ))}
+            
+            {/* Compact Resume link */}
             <a
               href={Pdf}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center text-white hover:text-gray-100 font-medium transition-colors"
+              className="text-white hover:text-gray-100 font-medium transition-colors text-sm px-2 h-full flex items-center"
             >
-              <HiDocumentText className="mr-1" /> Resume
+              Resume
             </a>
-            
-            <div className="flex space-x-3 ml-2"> {/* Reduced space between icons */}
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-white hover:text-gray-100 transition-colors"
-                  aria-label={social.url.split('.')[1]}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Social Icons - more compact */}
+          <div className="hidden md:flex items-center gap-3 ml-4 h-full">
+            {socialLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noreferrer"
+                className="text-white hover:text-gray-100 transition-colors text-lg"
+                aria-label={social.url.split('.')[1]}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button - centered in the navbar */}
+          <div className="md:hidden flex items-center h-full">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white focus:outline-none"
               aria-label="Toggle menu"
             >
               <svg
-                className="h-6 w-6"
+                className="h-5 w-5" // Smaller icon
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -119,39 +119,37 @@ const NavBar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - compact version */}
         {isOpen && (
-          <div className="md:hidden bg-cyan-600 rounded-lg mt-2 p-4 shadow-lg">
-            <div className="flex flex-col space-y-3">
+          <div className="md:hidden bg-cyan-600 rounded-lg mt-1 p-3 shadow-lg">
+            <div className="flex flex-col items-center space-y-2">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-white hover:text-gray-100 font-medium transition-colors"
+                  className="text-white hover:text-gray-100 font-medium transition-colors text-sm py-1"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>
               ))}
-              
               <a
                 href={Pdf}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center text-white hover:text-gray-100 font-medium transition-colors"
+                className="flex items-center text-white hover:text-gray-100 font-medium transition-colors text-sm py-1"
                 onClick={() => setIsOpen(false)}
               >
-                <HiDocumentText className="mr-2" /> Resume
+                <HiDocumentText className="mr-1" /> Resume
               </a>
-              
-              <div className="flex justify-center space-x-6 pt-2">
+              <div className="flex justify-center space-x-4 pt-1">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white hover:text-gray-100 transition-colors text-2xl"
+                    className="text-white hover:text-gray-100 transition-colors text-xl"
                   >
                     {social.icon}
                   </a>
