@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import "./App.css";
 
 import FooterMenu from "./components/FooterMenu";
-import OpenPdfButton from "./components/ResumeButton";
 import PastProjects from "./components/ProjectsSection";
 import Contact from "./components/Contact";
 import NavBar from "./components/NavBar";
@@ -25,7 +24,6 @@ function App() {
       <main className="z-1 relative px-10 md:px-20 lg:px-40 ">
         <NavBar />
         <Landing />
-        <OpenPdfButton />
         <Skills />
         <PastProjects />
         <Contact />

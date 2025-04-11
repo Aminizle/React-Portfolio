@@ -2,6 +2,9 @@ import React from "react";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import { Button } from "@material-tailwind/react";
+import Pdf from "../assets/Resume.pdf";
+import { HiDocumentText } from "react-icons/hi";
 
 const Landing = () => {
   const fadeIn = {
@@ -93,12 +96,28 @@ const Landing = () => {
             transition={{ delay: 0.4 }}
             className="mt-12 text-center"
           >
-            <a
-              href="#contact"
-              className="inline-block px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-white font-medium rounded-lg transition-colors duration-300 shadow-lg hover:shadow-cyan-500/30"
+            {" "}
+            <div className="flex items-center justify-evenly my-8 mx-auto">
+            <Button
+              className="flex items-center bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
+              ripple={true}
             >
-              Let's Build Something Amazing
-            </a>
+              <a href="#contact">Contact Me</a>
+            </Button>
+            <Button
+              className="flex items-center bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
+              ripple={true}
+            >
+              <a
+                href={Pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <HiDocumentText className="text-lg mr-2" />
+                View Resume
+              </a>
+            </Button></div>
           </motion.div>
         </div>
       </div>
