@@ -1,7 +1,7 @@
 import React from "react";
 import marvel from "../assets/marvel-720p.png";
 import nasa from "../assets/nasa-720p.png";
-import reactPortfolio from "../assets/reactPortfolio.png";
+import reactPortfolio from "../assets/reactPortfolio.jpg";
 import travel from "../assets/travel-720p.png";
 import Pdf from "../assets/Resume.pdf";
 import { AiFillGithub } from "react-icons/ai";
@@ -223,7 +223,7 @@ const PastProjects = () => {
           </div>
 
           {/* Portfolio Project */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
             <a
               href="https://ameen-mohiyuddin-portfolio.netlify.app/"
               target="_blank"
@@ -237,7 +237,7 @@ const PastProjects = () => {
             </a>
             <div className="mt-4">
               <h4 className="text-xl font-bold text-gray-200 mb-2">
-                This React Portfolio <span className="text-cyan-400">👋</span>
+                This React Portfolio <span>✨</span>
               </h4>
               <p className="text-gray-300 mb-4">
                 A showcase of modern React and Tailwind CSS development, built
