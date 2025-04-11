@@ -1,4 +1,4 @@
-# Ameen Mohiyuddin - Full Stack Software Engineer
+<h1 align="center"># Ameen Mohiyuddin - Full Stack Software Engineer</h1>
 
 <p align="center">
   <a href="https://ameen-mohiyuddin-portfolio.netlify.app/">
@@ -29,12 +29,6 @@ Beyond coding, I'm an avid motorcyclist who enjoys exploring new roads and pushi
 - Project gallery with case studies
 - Interactive contact form with validation
 - Performance optimized components
-
-## 🔍 Preview & Live Demo
-
-[![Portfolio Screenshot](portfolio/src/assets/portfolio.gif)](https://ameen-mohiyuddin-portfolio.netlify.app/)
-
-**Live URL:** [https://ameen-mohiyuddin-portfolio.netlify.app/](https://ameen-mohiyuddin-portfolio.netlify.app/)
 
 ## 🛠️ Development Setup
 
