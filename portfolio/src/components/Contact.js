@@ -8,7 +8,7 @@ function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [isCopied, setIsCopied] = useState(false);
   const [errors, setErrors] = useState({});
@@ -17,13 +17,13 @@ function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
     // Clear error when user types
     if (errors[name]) {
-      setErrors(prev => ({ ...prev, [name]: "" }));
+      setErrors((prev) => ({ ...prev, [name]: "" }));
     }
   };
 
@@ -54,7 +54,7 @@ function ContactForm() {
     }
 
     setIsSubmitting(true);
-    
+
     try {
       // Netlify form submission
       const form = e.target;
@@ -63,7 +63,7 @@ function ContactForm() {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(new FormData(form)).toString(),
       });
-      
+
       setSubmitSuccess(true);
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setSubmitSuccess(false), 5000);
@@ -75,11 +75,26 @@ function ContactForm() {
   };
 
   const socialLinks = [
-    { icon: <FaLinkedin className="text-xl" />, url: "https://www.linkedin.com/in/ameen-mohiyuddin/" },
-    { icon: <FaGithub className="text-xl" />, url: "https://github.com/Aminizle" },
-    { icon: <FaTwitter className="text-xl" />, url: "https://twitter.com/DevAmeenM" },
-    { icon: <FaYoutube className="text-xl" />, url: "https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" },
-    { icon: <SiCodewars className="text-xl" />, url: "https://www.codewars.com/users/DevAmeenM" }
+    {
+      icon: <FaLinkedin className="text-xl" />,
+      url: "https://www.linkedin.com/in/ameen-mohiyuddin/",
+    },
+    {
+      icon: <FaGithub className="text-xl" />,
+      url: "https://github.com/Aminizle",
+    },
+    {
+      icon: <FaTwitter className="text-xl" />,
+      url: "https://twitter.com/DevAmeenM",
+    },
+    {
+      icon: <FaYoutube className="text-xl" />,
+      url: "https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw",
+    },
+    {
+      icon: <SiCodewars className="text-xl" />,
+      url: "https://www.codewars.com/users/DevAmeenM",
+    },
   ];
 
   return (
@@ -103,9 +118,12 @@ function ContactForm() {
             className="bg-gray-800 p-8 rounded-xl shadow-lg shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300"
           >
             <input type="hidden" name="form-name" value="contact" />
-            
+
             <div className="mb-6">
-              <label htmlFor="name" className="block text-gray-200 font-medium mb-2 text-left">
+              <label
+                htmlFor="name"
+                className="block text-gray-200 font-medium mb-2 text-left"
+              >
                 Name *
               </label>
               <input
@@ -115,15 +133,22 @@ function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-200 border ${
-                  errors.name ? "border-red-500" : "border-gray-600 focus:border-cyan-500"
+                  errors.name
+                    ? "border-red-500"
+                    : "border-gray-600 focus:border-cyan-500"
                 } focus:outline-none focus:ring-1 focus:ring-cyan-500 transition`}
                 placeholder="Your name"
               />
-              {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
+              {errors.name && (
+                <p className="text-red-400 text-sm mt-1">{errors.name}</p>
+              )}
             </div>
 
             <div className="mb-6">
-              <label htmlFor="email" className="block text-gray-200 font-medium mb-2 text-left">
+              <label
+                htmlFor="email"
+                className="block text-gray-200 font-medium mb-2 text-left"
+              >
                 Email *
               </label>
               <input
@@ -133,15 +158,22 @@ function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-200 border ${
-                  errors.email ? "border-red-500" : "border-gray-600 focus:border-cyan-500"
+                  errors.email
+                    ? "border-red-500"
+                    : "border-gray-600 focus:border-cyan-500"
                 } focus:outline-none focus:ring-1 focus:ring-cyan-500 transition`}
                 placeholder="your.email@example.com"
               />
-              {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
+              {errors.email && (
+                <p className="text-red-400 text-sm mt-1">{errors.email}</p>
+              )}
             </div>
 
             <div className="mb-8">
-              <label htmlFor="message" className="block text-gray-200 font-medium mb-2 text-left">
+              <label
+                htmlFor="message"
+                className="block text-gray-200 font-medium mb-2 text-left"
+              >
                 Message *
               </label>
               <textarea
@@ -151,11 +183,15 @@ function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 className={`w-full px-4 py-3 rounded-lg bg-gray-700 text-gray-200 border ${
-                  errors.message ? "border-red-500" : "border-gray-600 focus:border-cyan-500"
+                  errors.message
+                    ? "border-red-500"
+                    : "border-gray-600 focus:border-cyan-500"
                 } focus:outline-none focus:ring-1 focus:ring-cyan-500 transition`}
                 placeholder="Your message..."
               ></textarea>
-              {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message}</p>}
+              {errors.message && (
+                <p className="text-red-400 text-sm mt-1">{errors.message}</p>
+              )}
             </div>
 
             <div className="flex justify-end">
@@ -169,7 +205,7 @@ function ContactForm() {
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
-              
+
               {submitSuccess && (
                 <div className="ml-4 text-green-400 flex items-center">
                   <IoMdCheckmark className="mr-1" /> Message sent successfully!
@@ -181,22 +217,21 @@ function ContactForm() {
           <div className="flex flex-col justify-between">
             <div className="bg-gray-800 p-8 rounded-xl shadow-lg h-full shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
               <div className="mb-8">
-                <h4 className="text-xl font-semibold text-gray-200 mb-4">Why contact me?</h4>
-                <p className="text-gray-300">
-                  Whether you need a{" "}
-                  <span className="text-cyan-400 font-medium">one-person powerhouse </span>
-                  or a{" "}
-                  <span className="text-cyan-400 font-medium">
-                    Scrum team player in an Agile environment{" "}
-                  </span>
-                  who can seamlessly integrate with your existing workflow, I've
-                  got you covered. Don't hesitate,{" "}
-                  <span className="text-cyan-400 font-medium">send me a message today!</span>
+                <h4 className="text-xl font-semibold text-gray-200 mb-4">
+                  Why contact me?
+                </h4>
+                <p className="text-gray-300 mb-4">
+                  Whether you need a one-person powerhouse or a Scrum team
+                  player in an Agile environment who can seamlessly integrate
+                  with your existing workflow, I've got you covered. Don't
+                  hesitate, send me a message today!
                 </p>
               </div>
 
               <div className="mb-8">
-                <h4 className="text-xl font-semibold text-gray-200 mb-4">Email me directly</h4>
+                <h4 className="text-xl font-semibold text-gray-200 mb-4">
+                  Email me directly
+                </h4>
                 <div className="flex items-center bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300">
                   <div className="flex-grow p-4">
                     <div className="flex items-center">
@@ -221,7 +256,9 @@ function ContactForm() {
               </div>
 
               <div>
-                <h4 className="text-xl font-semibold text-gray-200 mb-4">Find me online</h4>
+                <h4 className="text-xl font-semibold text-gray-200 mb-4">
+                  Find me online
+                </h4>
                 <div className="flex justify-between m-2">
                   {socialLinks.map((social, index) => (
                     <a
@@ -230,7 +267,7 @@ function ContactForm() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-300 hover:text-cyan-400 transition text-2xl "
-                      aria-label={`${social.url.split('.')[1]} profile`}
+                      aria-label={`${social.url.split(".")[1]} profile`}
                     >
                       {social.icon}
                     </a>
