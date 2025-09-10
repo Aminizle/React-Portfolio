@@ -1,6 +1,6 @@
 import React from "react";
-import marvel from "../assets/marvel-720p.png";
 import nasa from "../assets/nasa-720p.png";
+import reactNasa from "../assets/react-nasa.png";
 import reactPortfolio from "../assets/reactPortfolio.jpg";
 import travel from "../assets/travel-720p.png";
 import Pdf from "../assets/Resume.pdf";
@@ -98,36 +98,32 @@ const PastProjects = () => {
             </div>
           </div>
 
-          {/* Marvel Project */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
+          {/* Portfolio Project */}
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
             <a
-              href="https://marvel-cinematic-universe.netlify.app/"
+              href="https://ameen-mohiyuddin-portfolio.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={marvel}
-                alt="Marvel Project"
-                className="rounded-lg w-full h-48 object-cover"
+                src={reactPortfolio}
+                alt="Portfolio Project"
+                className="rounded-lg w-full h-48 object-cover border border-gray-600"
               />
             </a>
             <div className="mt-4">
               <h4 className="text-xl font-bold text-gray-200 mb-2">
-                Marvel Cinematic Universe Explorer{" "}
-                <BiCameraMovie className="inline ml-1" />
+                This React Portfolio <span>✨</span>
               </h4>
               <p className="text-gray-300 mb-4">
-                Your ultimate MCU companion - browse films with cinematic
-                posters, trailers, director details, and release dates in one
-                seamless experience.
+                A showcase of modern React and Tailwind CSS development, built
+                with clean design principles and responsive techniques.
               </p>
               <div className="mb-4">
                 <p className="font-semibold text-gray-200 mb-2">Tech Stack:</p>
                 <ul className="flex justify-evenly text-gray-300 list-disc list-inside">
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>Bootstrap</li>
-                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Tailwind CSS</li>
                 </ul>
               </div>
               <div className="flex justify-evenly flex-wrap gap-2">
@@ -135,13 +131,8 @@ const PastProjects = () => {
                   className="bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
                   ripple={true}
                 >
-                  <a
-                    href="https://marvel-cinematic-universe.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center"
-                  >
-                    Live Site <BiCameraMovie className="ml-2" />
+                  <a href={Pdf} target="_blank" rel="noreferrer">
+                    View Resume
                   </a>
                 </Button>
                 <Button
@@ -149,7 +140,7 @@ const PastProjects = () => {
                   ripple={true}
                 >
                   <a
-                    href="https://github.com/Aminizle/Marvel"
+                    href="https://github.com/Aminizle/React-Portfolio"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center"
@@ -222,32 +213,34 @@ const PastProjects = () => {
             </div>
           </div>
 
-          {/* Portfolio Project */}
-          <div className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
+          {/* React NASA Project */}
+          <div className="bg-gray-800 p-6 rounded-xl shadow-lg rounded-xl shadow-lg mb-12 shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
             <a
-              href="https://ameen-mohiyuddin-portfolio.netlify.app/"
+              href="https://react-nasa-ameen.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                src={reactPortfolio}
-                alt="Portfolio Project"
-                className="rounded-lg w-full h-48 object-cover border border-gray-600"
+                src={reactNasa}
+                alt="NASA Project"
+                className="rounded-lg w-full h-48 object-cover"
               />
             </a>
             <div className="mt-4">
               <h4 className="text-xl font-bold text-gray-200 mb-2">
-                This React Portfolio <span>✨</span>
+                NASA Picture of the Day Explorer{" "}
+                <GoTelescope className="inline ml-1" />
               </h4>
               <p className="text-gray-300 mb-4">
-                A showcase of modern React and Tailwind CSS development, built
-                with clean design principles and responsive techniques.
+                Discover daily celestial wonders through NASA's iconic Astronomy
+                Picture of the Day, enhanced with React for a out of this world experience.
               </p>
               <div className="mb-4">
                 <p className="font-semibold text-gray-200 mb-2">Tech Stack:</p>
                 <ul className="flex justify-evenly text-gray-300 list-disc list-inside">
                   <li>React</li>
-                  <li>Tailwind CSS</li>
+                  <li>Tailwind</li>
+                  <li>JSX</li>
                 </ul>
               </div>
               <div className="flex justify-evenly flex-wrap gap-2">
@@ -255,8 +248,13 @@ const PastProjects = () => {
                   className="bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
                   ripple={true}
                 >
-                  <a href={Pdf} target="_blank" rel="noreferrer">
-                    View Resume
+                  <a
+                    href="https://react-nasa-ameen.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center"
+                  >
+                    Live Site <GoTelescope className="ml-2" />
                   </a>
                 </Button>
                 <Button
@@ -264,7 +262,7 @@ const PastProjects = () => {
                   ripple={true}
                 >
                   <a
-                    href="https://github.com/Aminizle/React-Portfolio"
+                    href="https://github.com/Aminizle/Nasa-React"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center"
