@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* global.css */
+.glow-only {
+  background: none !important;
+  color: inherit !important;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
 }
