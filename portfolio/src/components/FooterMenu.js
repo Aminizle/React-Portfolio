@@ -45,10 +45,10 @@ function FooterMenu() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-800 text-gray-300 py-3 mx-5 rounded-t-xl">
+    <footer className="bg-gray-800 text-gray-300 py-3 mx-5 rounded-t-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
       <div className="container mx-auto">
         {/* Social Links */}
-        <nav aria-label="Social media links">
+        {/* <nav aria-label="Social media links">
           <ul className="flex justify-center space-x-6 mb-3">
             {socialLinks.map((link, index) => (
               <li key={index}>
@@ -64,11 +64,11 @@ function FooterMenu() {
               </li>
             ))}
           </ul>
-        </nav>
+        </nav> */}
 
         {/* Copyright */}
         <div className="text-center text-sm md:text-base">
-          <p className="mb-2">
+          <p>
             Made by Ameen Mohiyuddin with{" "}
             <span className="text-red-500 animate-pulse" aria-label="love">
               ❤

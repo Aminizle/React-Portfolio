@@ -8,36 +8,38 @@ function Particle({ theme = "dark" }) {
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    // Optional: remove in production
-    console.log(container);
+    // Optional debug
+    // console.log(container);
   }, []);
 
   const isDark = theme === "dark";
 
-  const bgColor = isDark ? "#0f172a" : "#f1f5f9";
+  // Smooth gradient transition for background
+  const bgGradient = isDark
+    ? "radial-gradient(circle at 20% 30%, #0f172a, #111827)"
+    : "radial-gradient(circle at 20% 30%, #f1f5f9, #e5e7eb)";
+
+  // Particle colors depending on theme
   const particleColors = isDark
-    ? ["#06b6d4", "#3b82f6", "#8b5cf6"] // cyan, blue, purple
-    : ["#2563eb", "#22c55e", "#f59e0b"]; // blue, green, yellow
-  const linkColor = isDark ? "#06b6d4" : "#2563eb";
+    ? ["#22d3ee", "#3b82f6", "#8b5cf6"] // cyan, blue, purple
+    : ["#3b82f6", "#22c55e", "#f59e0b"]; // blue, green, yellow
+
+  const linkColor = isDark ? "#3b82f6" : "#2563eb";
 
   return (
     <div className="absolute inset-0 -z-10">
-      {/* Radial gradient overlay for depth */}
+      {/* Background Gradient */}
       <div
-        className="absolute inset-0"
-        style={{
-          background: isDark
-            ? "radial-gradient(circle at 20% 30%, #0f172a, #000000)"
-            : "radial-gradient(circle at 20% 30%, #f1f5f9, #e5e7eb)",
-        }}
-      ></div>
+        className="absolute inset-0 transition-all duration-1000"
+        style={{ background: bgGradient }}
+      />
 
       <Particles
-        id="tsparticles"
+        key={theme} // forces re-render on theme change
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: { color: { value: bgColor } },
+          background: { color: { value: "transparent" } },
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -46,12 +48,12 @@ function Particle({ theme = "dark" }) {
             },
             modes: {
               push: { quantity: 3 },
-              grab: { distance: 140, links: { opacity: 0.5 } },
+              grab: { distance: 140, links: { opacity: 0.3 } },
               repulse: { distance: 100, duration: 0.4 },
             },
           },
           particles: {
-            number: { value: 50, density: { enable: true, area: 900 } },
+            number: { value: 60, density: { enable: true, area: 900 } },
             color: { value: particleColors },
             shape: { type: "circle" },
             opacity: {
@@ -75,7 +77,7 @@ function Particle({ theme = "dark" }) {
               enable: true,
               distance: 120,
               color: linkColor,
-              opacity: 0.15,
+              opacity: 0.2,
               width: 1,
             },
             wobble: { enable: true, distance: 1, speed: 0.5 },
