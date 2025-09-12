@@ -49,13 +49,10 @@ const Skills = () => {
           className="bg-gray-800 p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
-            Technical Skills & Continuous Learning
+            Technical Skills
           </h3>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4">
-            My toolkit for building exceptional digital experiences. Each skill
-            has been honed through real-world projects and continuous learning.
-            I regularly challenge myself on CodeWars to sharpen my
-            problem-solving skills.
+            I specialize in crafting pixel-perfect user experiences that are intuitive and engaging. My toolkit spans front-end, back-end, and development methodologies, honed through real-world projects and continuous learning.
           </p>
 
        {/* CodeWars Badge */}
