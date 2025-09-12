@@ -7,7 +7,6 @@ import Pdf from "../assets/Resume.pdf";
 import { AiFillGithub } from "react-icons/ai";
 import { GiAirplaneDeparture } from "react-icons/gi";
 import { GoTelescope } from "react-icons/go";
-import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 
@@ -21,7 +20,8 @@ const PastProjects = () => {
     {
       title: "Travel More, Worry Less",
       img: travel,
-      description: "A responsive travel experience with immersive visuals and effortless navigation to spark your next adventure.",
+      description:
+        "A responsive travel experience with immersive visuals and effortless navigation to spark your next adventure.",
       tech: ["HTML5", "CSS3", "JavaScript"],
       live: "https://ameentravel.netlify.app/",
       github: "https://github.com/Aminizle/travel-site",
@@ -30,7 +30,8 @@ const PastProjects = () => {
     {
       title: "This React Portfolio",
       img: reactPortfolio,
-      description: "A showcase of modern React and Tailwind development, built with clean design principles and responsive techniques.",
+      description:
+        "A showcase of modern React and Tailwind development, built with clean design principles and responsive techniques.",
       tech: ["React", "Tailwind"],
       live: Pdf,
       github: "https://github.com/Aminizle/React-Portfolio",
@@ -39,7 +40,8 @@ const PastProjects = () => {
     {
       title: "NASA Picture of the Day Explorer",
       img: nasa,
-      description: "Discover daily celestial wonders through NASA's iconic Astronomy Picture of the Day, enhanced with immersive video backgrounds.",
+      description:
+        "Discover daily celestial wonders through NASA's iconic Astronomy Picture of the Day, enhanced with immersive video backgrounds.",
       tech: ["HTML5", "CSS3", "JavaScript"],
       live: "https://nasa-picture-archive.netlify.app/",
       github: "https://github.com/Aminizle/NASA",
@@ -48,7 +50,8 @@ const PastProjects = () => {
     {
       title: "NASA React Explorer",
       img: reactNasa,
-      description: "Discover daily celestial wonders through NASA's Astronomy Picture of the Day, enhanced with React for an out-of-this-world experience.",
+      description:
+        "Discover daily celestial wonders through NASA's Astronomy Picture of the Day, enhanced with React for an out-of-this-world experience.",
       tech: ["React", "Tailwind"],
       live: "https://react-nasa-ameen.netlify.app/",
       github: "https://github.com/Aminizle/Nasa-React",
@@ -57,30 +60,25 @@ const PastProjects = () => {
   ];
 
   return (
-    <section id="Projects" className="py-16 px-4 pt-[6rem] -mt-[6rem]">
+    <section id="Projects" className="py-16 px-4 scroll-mt-8">
       <div className="max-w-6xl mx-auto">
         {/* Projects Header */}
         <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
+          className="bg-dark-bg p-6 rounded-xl shadow-lg mb-12 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
         >
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-100 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
             Projects
           </h3>
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
             Welcome to my digital workshop where creativity meets technical execution. Each project represents my commitment to crafting exceptional user experiences through innovative solutions. I specialize in transforming complex API integrations into intuitive interfaces.
           </p>
-          {/* <div className="flex justify-center my-4 space-x-3">
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-          </div> */}
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}
@@ -93,10 +91,11 @@ const PastProjects = () => {
                 y: -5,
                 rotateX: 1,
                 rotateY: 1,
-                boxShadow: "0 0 20px rgba(168,85,247,0.8), 0 0 40px rgba(59,130,246,0.6)",
+                boxShadow:
+                  "0 0 20px rgba(168,85,247,0.8), 0 0 40px rgba(59,130,246,0.6)",
                 transition: { duration: 0.4, ease: "easeOut" },
               }}
-              className="bg-gray-800 p-6 rounded-xl shadow-lg shadow-glow-blue cursor-pointer"
+              className="bg-dark-bg p-6 rounded-xl shadow-lg shadow-glow-blue cursor-pointer"
             >
               <motion.div
                 className="relative h-48 mb-4 overflow-hidden rounded-lg"
@@ -123,9 +122,9 @@ const PastProjects = () => {
               </div>
               <div className="flex justify-evenly flex-wrap gap-2">
                 <Button
-  className="bg-gray-700 rounded-lg shadow-lg hover:shadow-glow-purple transition-shadow duration-500 hover:text-purple-300 px-4 py-2"
-  ripple={true}
->
+                  className="bg-gray-700 rounded-lg shadow-lg hover:shadow-glow-purple transition-shadow duration-500 hover:text-purple-300 px-4 py-2"
+                  ripple={true}
+                >
                   <a
                     href={project.live}
                     target="_blank"
@@ -136,9 +135,9 @@ const PastProjects = () => {
                   </a>
                 </Button>
                 <Button
-  className="bg-gray-700 rounded-lg shadow-lg hover:shadow-glow-purple transition-shadow duration-500 hover:text-purple-300 px-4 py-2"
-  ripple={true}
->
+                  className="bg-gray-700 rounded-lg shadow-lg hover:shadow-glow-purple transition-shadow duration-500 hover:text-purple-300 px-4 py-2"
+                  ripple={true}
+                >
                   <a
                     href={project.github}
                     target="_blank"

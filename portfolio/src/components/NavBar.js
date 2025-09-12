@@ -1,10 +1,10 @@
+// src/components/NavBar.jsx
 import React, { useState, useEffect } from "react";
 import { HiDocumentText } from "react-icons/hi";
 import Pdf from "../assets/Resume.pdf";
-import ThemeToggler from "./ThemeToggler";
 import SocialLinks from "./SocialLinks";
 
-const NavBar = ({ theme, setTheme }) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,15 +21,16 @@ const NavBar = ({ theme, setTheme }) => {
     { name: "Contact", href: "#Contact" },
   ];
 
-  const glowClasses = "transition-colors duration-300 hover:text-glow-cyan hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]";
+  const glowClasses =
+    "transition-colors duration-300 hover:text-glow-cyan hover:drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]";
 
   return (
     <nav
-      className={`sticky top-0 left-0 right-0 rounded-b-xl z-50 transition-all duration-300
-        ${scrolled
-          ? "bg-dark-bg-accent dark:bg-dark-bg shadow-glow-cyan py-1"
-          : "bg-dark-bg dark:bg-dark-bg-secondary shadow-glow-blue py-2"
-        } hover:shadow-glow-purple`}
+      className={`sticky top-0 left-0 right-0 rounded-b-xl z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-dark-bg backdrop-blur-md shadow-md transition-colors duration-500"
+          : "bg-dark-bg-secondary backdrop-blur-md shadow transition-colors duration-500"
+      } shadow-glow-blue hover:shadow-glow-purple hover:text-purple-300`}
     >
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-12">
@@ -64,9 +65,8 @@ const NavBar = ({ theme, setTheme }) => {
               <HiDocumentText className="mr-1" /> Resume
             </a>
 
-            {/* Desktop Social Links + Theme toggler */}
+            {/* Desktop Social Links */}
             <div className="flex items-center gap-4">
-              <ThemeToggler theme={theme} setTheme={setTheme} className="w-6 h-6 glow-only" />
               <SocialLinks />
             </div>
           </div>
@@ -77,6 +77,7 @@ const NavBar = ({ theme, setTheme }) => {
               onClick={() => setIsOpen(!isOpen)}
               className={`text-text-primary ${glowClasses} focus:outline-none`}
               aria-label="Toggle menu"
+              aria-expanded={isOpen}
             >
               <svg
                 className="h-5 w-5"
@@ -85,9 +86,19 @@ const NavBar = ({ theme, setTheme }) => {
                 stroke="currentColor"
               >
                 {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
@@ -96,7 +107,11 @@ const NavBar = ({ theme, setTheme }) => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-dark-bg-secondary dark:bg-dark-bg rounded-lg mt-1 p-3 shadow-lg">
+          <div
+            className={`md:hidden ${
+              scrolled ? "bg-dark-bg" : "bg-dark-bg-secondary"
+            } rounded-lg mt-1 p-3 shadow-lg`}
+          >
             <div className="flex flex-col items-center space-y-2">
               {navLinks.map((link) => (
                 <a
@@ -119,9 +134,8 @@ const NavBar = ({ theme, setTheme }) => {
                 <HiDocumentText className="mr-1" /> Resume
               </a>
 
-              {/* Mobile Social Links + Theme toggler */}
+              {/* Mobile Social Links */}
               <div className="flex justify-center space-x-4 pt-2">
-                <ThemeToggler theme={theme} setTheme={setTheme} className="w-5 h-5 glow-only" />
                 <SocialLinks />
               </div>
             </div>

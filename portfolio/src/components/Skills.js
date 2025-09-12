@@ -33,54 +33,50 @@ const Skills = () => {
       img: developmentTools,
       items: [
         ["Git, Jenkins", "JIRA, Confluence"],
-        ["Postman", "Agile Scrum", "Kanban"],        
+        ["Postman", "Agile Scrum", "Kanban"],
       ],
     },
   ];
 
   return (
-    <section id="Skills" className="py-16 px-4 pt-[6rem] -mt-[6rem]">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeInUp}
-          className="bg-gray-800 p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
+    <section id="Skills" className="py-16 px-4 scroll-mt-8">
+  <div className="max-w-6xl mx-auto">
+    {/* Header */}
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={fadeInUp}
+      className="bg-dark-bg p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
+    >
+      <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
+        Technical Skills
+      </h3>
+      <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4">
+        I specialize in crafting pixel-perfect user experiences that are
+        intuitive and engaging. My toolkit spans front-end, back-end, and
+        development methodologies, honed through real-world projects and
+        continuous learning.
+      </p>
+
+      {/* CodeWars Badge */}
+      <div className="flex justify-center mb-6">
+        <motion.a
+          href="https://www.codewars.com/users/DevAmeenM"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-dark-bg p-2 rounded-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500"
+          whileHover={{ scale: 1.08, y: -3 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
-          <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
-            Technical Skills
-          </h3>
-          <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4">
-            I specialize in crafting pixel-perfect user experiences that are intuitive and engaging. My toolkit spans front-end, back-end, and development methodologies, honed through real-world projects and continuous learning.
-          </p>
+          <img
+            src="https://www.codewars.com/users/DevAmeenM/badges/large"
+            alt="codewars badge large"
+            className="max-w-xs h-auto rounded-lg"
+          />
+        </motion.a>
+      </div>
+    </motion.div>
 
-       {/* CodeWars Badge */}
-<div className="flex justify-center mb-6">
-  <motion.a
-    href="https://www.codewars.com/users/DevAmeenM"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-gray-800 p-2 rounded-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500"
-    whileHover={{ scale: 1.08, y: -3 }}
-    transition={{ duration: 0.4, ease: "easeOut" }}
-  >
-    <img
-      src="https://www.codewars.com/users/DevAmeenM/badges/large"
-      alt="codewars badge large"
-      className="max-w-xs h-auto rounded-lg"
-    />
-  </motion.a>
-</div>
-
-
-          {/* Glow Icons */}
-          {/* <div className="flex justify-center space-x-3">
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-            <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse text-2xl" />
-          </div> */}
-        </motion.div>
 
         {/* Skills Cards */}
         <div className="flex flex-col md:flex-row gap-8">
