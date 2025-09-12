@@ -22,7 +22,7 @@ const Landing = () => {
     >
       <div className="max-w-6xl mx-auto">
         {/* Glow Card */}
-        <div className="bg-dark-bg p-8 md:p-12 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
+        <div className="bg-gray-800 p-8 md:p-12 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
           {/* Name */}
           <motion.h2
             initial="hidden"

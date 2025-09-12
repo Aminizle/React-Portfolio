@@ -46,7 +46,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       variants={fadeInUp}
-      className="bg-dark-bg p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
+      className="bg-gray-800 p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
     >
       <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
         Technical Skills
@@ -64,7 +64,7 @@ const Skills = () => {
           href="https://www.codewars.com/users/DevAmeenM"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-dark-bg p-2 rounded-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500"
+          className="bg-gray-800 p-2 rounded-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500"
           whileHover={{ scale: 1.08, y: -3 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
         >

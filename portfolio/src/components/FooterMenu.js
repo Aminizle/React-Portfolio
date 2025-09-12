@@ -45,7 +45,7 @@ function FooterMenu() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark-bg text-gray-300 py-3 mx-5 rounded-t-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
+    <footer className="bg-gray-800 text-gray-300 py-3 mx-5 rounded-t-xl shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
       <div className="container mx-auto">
         {/* Social Links */}
         {/* <nav aria-label="Social media links">

@@ -7,18 +7,15 @@ function Particle() {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
-    // Optional debug
-    // console.log(container);
-  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <div className="absolute inset-0 -z-10">
-      {/* Dark Background Gradient */}
+      {/* Dark Gradient Background */}
       <div
         className="absolute inset-0"
         style={{
-          background: "radial-gradient(circle at 20% 30%, #0f172a, #111827)",
+          background: "radial-gradient(circle at 20% 30%, #0f172a, #0a0f1a)",
         }}
       />
 
@@ -30,49 +27,50 @@ function Particle() {
           fpsLimit: 120,
           interactivity: {
             events: {
-              onHover: { enable: true, mode: "grab" },
-              onClick: { enable: true, mode: "push" },
+              onHover: { enable: false, mode: "repulse" },
+              onClick: { enable: false, mode: "push" },
             },
             modes: {
-              push: { quantity: 3 },
-              grab: { distance: 140, links: { opacity: 0.3 } },
-              repulse: { distance: 100, duration: 0.4 },
+              push: { quantity: 4 },
+              repulse: { distance: 150, duration: 0.6 },
+              grab: { distance: 200, links: { opacity: 0.4 } },
             },
           },
           particles: {
-            number: { value: 120, density: { enable: true, area: 900 } },
-            color: { value: ["#22d3ee", "#3b82f6", "#8b5cf6"] }, // cyan, blue, purple
+            number: { value: 140, density: { enable: true, area: 900 } },
+            color: { value: ["#22d3ee", "#3b82f6", "#a78bfa", "#f472b6"] },
             shape: { type: "circle" },
             opacity: {
-              value: 0.6,
+              value: 0.8,
               random: true,
-              animation: { enable: true, speed: 1, minimumValue: 0.2 },
+              animation: { enable: true, speed: 1.5, minimumValue: 0.3 },
             },
             size: {
-              value: { min: 1, max: 6 },
-              animation: {
-                enable: true,
-                speed: 3,
-                minimumValue: 0.5,
-                destroy: "max",
-              },
+              value: { min: 2, max: 8 },
+              random: true,
+              animation: { enable: true, speed: 3, minimumValue: 1 },
             },
             move: {
               enable: true,
-              speed: 1.2,
-              direction: "top",
+              speed: 1.8,
+              direction: "top-right",
               outModes: { default: "out" },
               random: true,
               straight: false,
             },
             links: {
               enable: true,
-              distance: 120,
+              distance: 140,
               color: "#3b82f6",
-              opacity: 0.2,
-              width: 1,
+              opacity: 0.25,
+              width: 1.5,
             },
-            wobble: { enable: true, distance: 1, speed: 0.5 },
+            wobble: { enable: true, distance: 2, speed: 0.8 },
+            twinkle: {
+              enable: true,
+              frequency: 0.05,
+              opacity: 0.8,
+            },
           },
           detectRetina: true,
         }}

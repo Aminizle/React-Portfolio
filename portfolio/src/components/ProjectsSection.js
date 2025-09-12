@@ -67,7 +67,7 @@ const PastProjects = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          className="bg-dark-bg p-6 rounded-xl shadow-lg mb-12 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
+          className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-100 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
             Projects
@@ -95,7 +95,7 @@ const PastProjects = () => {
                   "0 0 20px rgba(168,85,247,0.8), 0 0 40px rgba(59,130,246,0.6)",
                 transition: { duration: 0.4, ease: "easeOut" },
               }}
-              className="bg-dark-bg p-6 rounded-xl shadow-lg shadow-glow-blue cursor-pointer"
+              className="bg-gray-800 p-6 rounded-xl shadow-lg shadow-glow-blue cursor-pointer"
             >
               <motion.div
                 className="relative h-48 mb-4 overflow-hidden rounded-lg"
