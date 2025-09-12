@@ -15,7 +15,7 @@ function Particle() {
       <div
         className="absolute inset-0"
         style={{
-          background: "radial-gradient(circle at 20% 30%, #0f172a, #0a0f1a)",
+          background: "radial-gradient(circle at 20% 30%, #0f172a, #111827)",
         }}
       />
 
