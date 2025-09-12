@@ -15,7 +15,7 @@ const NavBar = ({ theme, setTheme }) => {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#About" },
+    { name: "About", href: "#Landing" },
     { name: "Skills", href: "#Skills" },
     { name: "Projects", href: "#Projects" },
     { name: "Contact", href: "#Contact" },
