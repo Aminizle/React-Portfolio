@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "@material-tailwind/react";
 import Pdf from "../assets/Resume.pdf";
-import { HiDocumentText } from "react-icons/hi";
+import { HiDocumentText, HiMail } from "react-icons/hi";
 
 const Landing = () => {
+  const [hoverName, setHoverName] = useState(false);
+
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 1.6 } },
@@ -18,17 +20,19 @@ const Landing = () => {
       className="min-h-screen flex items-center justify-center px-4 py-20"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Gray Background Card */}
-        <div className="bg-gray-800 p-8 md:p-12 rounded-xl shadow-lg shadow-cyan-400/30 hover:shadow-cyan-400/50 transition-shadow duration-300">
+        {/* Glow Card */}
+        <div className="bg-gray-800 p-8 md:p-12 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500">
           {/* Name */}
-          <motion.h2
-            initial="hidden"
-            animate="visible"
-            variants={fadeIn}
-            className="text-5xl underline md:text-6xl font-bold text-gray-100 mb-4"
-          >
-            Ameen Mohiyuddin
-          </motion.h2>
+<motion.h2
+  initial="hidden"
+  animate="visible"
+  variants={fadeIn}
+  onMouseEnter={() => setHoverName(true)}
+  onMouseLeave={() => setHoverName(false)}
+  className="text-5xl md:text-6xl font-bold text-gray-100 mb-4 transition-all duration-400 cursor-pointer drop-shadow-[0_0_12px_rgba(59,130,246,0.8)] hover:drop-shadow-[0_0_18px_rgba(168,85,247,0.9)]"
+>
+  {hoverName ? "<DevAmeen />" : "Ameen Mohiyuddin"}
+</motion.h2>
 
           {/* Animated Title */}
           <motion.div
@@ -51,11 +55,11 @@ const Landing = () => {
               wrapper="h3"
               cursor={true}
               repeat={Infinity}
-              className="text-2xl md:text-3xl font-medium text-cyan-400"
+              className="text-2xl md:text-3xl font-medium text-blue-400 hover:text-purple-500"
             />
           </motion.div>
 
-          {/* Introduction */}
+          {/* Intro */}
           <motion.div
             initial="hidden"
             animate="visible"
@@ -73,9 +77,9 @@ const Landing = () => {
             </p>
 
             <div className="flex justify-center my-4">
-              <VscDebugBreakpointLog className="text-cyan-400 animate-pulse" />
-              <VscDebugBreakpointLog className="text-cyan-400 animate-pulse" />
-              <VscDebugBreakpointLog className="text-cyan-400 animate-pulse" />
+              <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse" />
+              <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse" />
+              <VscDebugBreakpointLog className="text-glow-blue hover:text-glow-purple animate-pulse" />
             </div>
 
             <p className="mb-6 text-lg md:text-xl leading-relaxed">
@@ -96,28 +100,33 @@ const Landing = () => {
             transition={{ delay: 0.4 }}
             className="mt-12 text-center"
           >
-            {" "}
-            <div className="flex items-center justify-evenly my-8 mx-auto">
-            <Button
-              className="flex items-center bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
-              ripple={true}
-            >
-              <a href="#contact">Contact Me</a>
-            </Button>
-            <Button
-              className="flex items-center bg-gray-700 rounded-lg overflow-hidden shadow-lg  hover:shadow-cyan-400/50 transition-shadow duration-300"
-              ripple={true}
-            >
-              <a
-                href={Pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center"
+            <div className="flex items-center justify-evenly my-8 mx-auto space-x-6">
+              {/* Contact Button */}
+              <Button
+                className="flex items-center justify-center w-44 bg-gray-700 rounded-lg px-6 py-3 text-gray-100 font-semibold shadow-md shadow-glow-blue hover:shadow-glow-purple transition-all duration-500 hover:text-purple-300"
+                ripple={true}
               >
-                <HiDocumentText className="text-lg mr-2" />
-                View Resume
-              </a>
-            </Button></div>
+                <a href="#contact" className="flex items-center">
+                  <HiMail className="text-lg mr-2" /> Contact Me
+                </a>
+              </Button>
+
+              {/* Resume Button */}
+              <Button
+                className="flex items-center justify-center w-44 bg-gray-700 rounded-lg px-6 py-3 text-gray-100 font-semibold shadow-md shadow-glow-blue hover:shadow-glow-purple transition-all duration-500 hover:text-purple-300"
+                ripple={true}
+              >
+                <a
+                  href={Pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <HiDocumentText className="text-lg mr-2" />
+                  View Resume
+                </a>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </div>
