@@ -67,7 +67,7 @@ const PastProjects = () => {
           initial="hidden"
           animate="visible"
           variants={fadeInUp}
-          className="bg-gray-800 p-6 rounded-xl shadow-lg mb-12 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
+          className="bg-gray-800 p-6 rounded-xl shadow-lg mb-10 shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold text-gray-100 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
             Projects
@@ -78,7 +78,7 @@ const PastProjects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
           {projects.map((project, idx) => (
             <motion.div
               key={idx}

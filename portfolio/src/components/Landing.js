@@ -1,11 +1,11 @@
 // src/components/Landing.jsx
 import React, { useState } from "react";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
-import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "@material-tailwind/react";
 import Pdf from "../assets/Resume.pdf";
 import { HiDocumentText, HiMail } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Landing = () => {
   const [hoverName, setHoverName] = useState(false);

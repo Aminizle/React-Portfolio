@@ -46,7 +46,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       variants={fadeInUp}
-      className="bg-gray-800 p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-12 text-center"
+      className="bg-gray-800 p-3 rounded-xl shadow-lg shadow-glow-blue hover:shadow-glow-purple transition-shadow duration-500 mb-10 text-center"
     >
       <h3 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4 drop-shadow-[0_0_12px_rgba(59,130,246,0.7)]">
         Technical Skills
@@ -59,7 +59,7 @@ const Skills = () => {
       </p>
 
       {/* CodeWars Badge */}
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-center mb-2">
         <motion.a
           href="https://www.codewars.com/users/DevAmeenM"
           target="_blank"
@@ -79,7 +79,7 @@ const Skills = () => {
 
 
         {/* Skills Cards */}
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-6">
           {skills.map((skill, idx) => (
             <motion.div
               key={idx}
@@ -99,9 +99,7 @@ const Skills = () => {
               className="flex-1 bg-gray-800 p-6 rounded-xl shadow-lg shadow-glow-blue cursor-pointer"
             >
               <motion.div
-                className="relative h-48 mb-4 overflow-hidden rounded-lg"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="relative h-48 mb-4 overflow-hidden rounded-lg"            
               >
                 <img
                   src={skill.img}
