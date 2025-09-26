@@ -29,7 +29,7 @@ const PastProjects = () => {
       icon: <GiAirplaneDeparture className="inline ml-1" />,
     },
     {
-      title: "School Myths Buster",
+      title: "Schoolyard Myths",
       img: schoolMythsBuster,
       description:
         "Enter your graduation year and uncover the surprising myths you once believed in school, and see what’s changed today.",
