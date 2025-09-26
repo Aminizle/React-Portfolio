@@ -3,6 +3,7 @@ import nasa from "../assets/nasa-720p.png";
 import reactNasa from "../assets/react-nasa.png";
 import reactPortfolio from "../assets/reactPortfolio.jpg";
 import travel from "../assets/travel-720p.png";
+import schoolMythsBuster from "../assets/school-myths-buster.png";
 import Pdf from "../assets/Resume.pdf";
 import { AiFillGithub } from "react-icons/ai";
 import { GiAirplaneDeparture } from "react-icons/gi";
@@ -28,13 +29,13 @@ const PastProjects = () => {
       icon: <GiAirplaneDeparture className="inline ml-1" />,
     },
     {
-      title: "This React Portfolio",
-      img: reactPortfolio,
+      title: "School Myths Buster",
+      img: schoolMythsBuster,
       description:
-        "A showcase of modern React and Tailwind development, built with clean design principles and responsive techniques.",
-      tech: ["React", "Tailwind"],
-      live: Pdf,
-      github: "https://github.com/Aminizle/React-Portfolio",
+        "Enter your graduation year and uncover the surprising myths you once believed in school, and see what’s changed today.",
+      tech: ["Next.js", "Tailwind", "Shadcn UI"],
+      live: "https://school-myths-buster.netlify.app/",
+      github: "https://github.com/Aminizle/school-myths-buster",
       icon: "✨",
     },
     {
