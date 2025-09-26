@@ -34,7 +34,7 @@ const PastProjects = () => {
       description:
         "Enter your graduation year and uncover the surprising myths you once believed in school, and see what’s changed today.",
       tech: ["Next.js", "Tailwind", "Shadcn UI"],
-      live: "https://school-myths-buster.netlify.app/",
+      live: "https://schoolyard-myths.netlify.app/",
       github: "https://github.com/Aminizle/school-myths-buster",
       icon: "✨",
     },
