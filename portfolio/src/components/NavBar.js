@@ -56,14 +56,14 @@ const NavBar = () => {
             ))}
 
             {/* Resume link */}
-            <a
+            {/* <a
               href={Pdf}
               target="_blank"
               rel="noreferrer"
               className={`text-text-primary font-medium text-sm px-2 h-full flex items-center transition-colors duration-300 ${glowClasses}`}
             >
               <HiDocumentText className="mr-1" /> Resume
-            </a>
+            </a> */}
 
             {/* Desktop Social Links */}
             <div className="flex items-center gap-4">

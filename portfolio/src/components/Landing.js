@@ -83,11 +83,11 @@ const Landing = () => {
               </Button>
 
               {/* Resume Button */}
-              <Button className="flex items-center justify-center w-44 bg-gray-700 rounded-lg px-6 py-3 text-gray-100 font-semibold shadow-md shadow-glow-blue hover:shadow-glow-purple hover:text-purple-300 transition-all duration-500" ripple={true}>
+              {/* <Button className="flex items-center justify-center w-44 bg-gray-700 rounded-lg px-6 py-3 text-gray-100 font-semibold shadow-md shadow-glow-blue hover:shadow-glow-purple hover:text-purple-300 transition-all duration-500" ripple={true}>
                 <a href={Pdf} target="_blank" rel="noopener noreferrer" className="flex items-center">
                   <HiDocumentText className="text-lg mr-2" /> View Resume
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </motion.div>
         </div>
