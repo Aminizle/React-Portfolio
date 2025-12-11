@@ -21,7 +21,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white; /* permanent dark mode text color */
+  color: white;
+  /* permanent dark mode text color */
 }
 
 .App-link {
@@ -32,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -45,5 +47,6 @@
 }
 
 body {
-  background-color: #0f172a; /* your dark-bg */
+  background-color: #0f172a;
+  /* your dark-bg */
 }
